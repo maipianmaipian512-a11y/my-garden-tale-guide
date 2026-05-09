@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Garden Tale Pet Courtyard Guide — All Pets & Exploration</title>
+<meta name="description" content="My Garden Tale pet courtyard guide: 15 pet species, exploration rewards, furniture upgrades, and resource maximization tips.">
+<style>
+  :root { --pink:#e8a0bf;--pink-dark:#c2185b;--green:#66bb6a;--green-dark:#2e7d32;--gold:#f9a825;--bg:#fdf6f0;--bg-card:#fff;--text:#333;--text-light:#777;--radius:14px; }
+  *{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}a{color:var(--pink-dark);text-decoration:none}a:hover{text-decoration:underline}
+  .hero{background:linear-gradient(135deg,#fce4ec,#f8bbd0,#e8a0bf);padding:48px 20px 36px;text-align:center}.hero h1{font-size:clamp(24px,4vw,42px);color:var(--pink-dark)}.hero p{font-size:15px;color:#6a1b4a;margin:8px auto 0;max-width:440px}
+  .nav-bar{background:var(--pink-dark);display:flex;overflow-x:auto;scrollbar-width:none}.nav-bar::-webkit-scrollbar{display:none}.nav-bar a{color:rgba(255,255,255,.75);padding:12px 16px;font-size:13px;white-space:nowrap;border-bottom:3px solid transparent;transition:.2s}.nav-bar a:hover,.nav-bar a.active{color:#fff;border-bottom-color:var(--gold);text-decoration:none}
+  .container{max-width:900px;margin:0 auto;padding:0 16px}.section{padding:32px 0 16px}.section-title{font-size:20px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:6px}
+  .content-card{background:var(--bg-card);border-radius:var(--radius);padding:22px 20px;margin-bottom:16px;box-shadow:0 1px 10px rgba(0,0,0,.06)}.content-card h2{font-size:17px;margin-bottom:10px;color:var(--pink-dark)}.content-card h3{font-size:15px;margin:12px 0 6px;color:#555}.content-card p,.content-card li{font-size:14px;color:#444}.content-card ul{padding-left:20px}li{margin-bottom:4px}
+  .tip{background:#e8f5e9;border-left:4px solid var(--green);padding:12px 16px;border-radius:0 10px 10px 0;font-size:13px;margin:12px 0}.tip::before{content:"💡 "}
+  .warning{background:#fff3e0;border-left:4px solid #fb8c00;padding:12px 16px;border-radius:0 10px 10px 0;font-size:13px;margin:12px 0}.warning::before{content:"⚠️ "}
+  footer{background:#fce4ec;text-align:center;padding:28px 16px;margin-top:36px;font-size:13px;color:var(--pink-dark)}
+  .pet-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:12px}
+  .pet-card{background:var(--bg-card);border-radius:var(--radius);padding:16px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+  .pet-card .pet-emoji{font-size:36px;display:block;margin-bottom:6px}
+  .pet-card .pet-name{font-size:15px;font-weight:600;margin-bottom:4px}
+  .pet-card .pet-info{font-size:13px;color:#555}
+  .pet-card .pet-rarity{display:inline-block;font-size:11px;padding:2px 8px;border-radius:8px;font-weight:600;margin-top:6px;color:#fff}
+  .rarity-common{background:#90a4ae}.rarity-uncommon{background:#f9a825;color:#333}.rarity-rare{background:#fb8c00}.rarity-epic{background:#e53935}.rarity-legendary{background:#7b1fa2}
+  .exploration-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}
+  .exploration-table th{background:#fce4ec;color:var(--pink-dark);padding:8px 10px;text-align:left;font-weight:600}
+  .exploration-table td{padding:7px 10px;border-bottom:1px solid #f0f0f0}
+  .exploration-table tr:hover td{background:#fff5f8}
+  .furniture-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:12px}
+  .furniture-card{background:var(--bg-card);border-radius:var(--radius);padding:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+  .furniture-card h4{font-size:14px;color:var(--pink-dark);margin-bottom:4px}
+  .furniture-card p{font-size:13px;color:#555}
+  @media(max-width:600px){.container{padding:0 10px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>🐾 Pet Courtyard Guide</h1>
+  <p>Explore the pet system: 15 species, exploration rewards, furniture upgrades & more.</p>
+</header>
+
+<nav class="nav-bar">
+  <a href="index.html">🏠 Home</a>
+  <a href="codes.html">🎁 Codes</a>
+  <a href="beginner.html">🌱 Beginner</a>
+  <a href="flowers.html">🌻 Flowers</a>
+  <a href="orders.html">📋 Orders</a>
+  <a href="guild.html">⭐ Guild</a>
+  <a href="pets.html" class="active">🐾 Pets</a>
+</nav>
+
+<div class="container">
+
+  <section class="section">
+
+    <div class="content-card">
+      <h2>🏡 What Is the Pet Courtyard?</h2>
+      <p>The Pet Courtyard is a separate area where you collect and care for pets. Each pet has unique abilities that help you in the garden:</p>
+      <ul>
+        <li><strong>🌸 Auto-Harvest</strong> — some pets auto-collect ripe flowers</li>
+        <li><strong>⚡ Speed Boost</strong> — reduce flower growth time</li>
+        <li><strong>💰 Gold Bonus</strong> — increase gold earned from orders</li>
+        <li><strong>🌈 Special</strong> — rare pets have unique abilities like rare flower discovery</li>
+      </ul>
+      <div class="tip">Pets are passive helpers. Once assigned, they work automatically — no daily maintenance needed beyond feeding and upgrading.</div>
+    </div>
+
+    <div class="content-card">
+      <h2>🐾 All Pet Species (15 Total)</h2>
+      <div class="pet-grid">
+        <div class="pet-card">
+          <span class="pet-emoji">🐱</span>
+          <div class="pet-name">Cat "Whiskers"</div>
+          <div class="pet-info">Auto-harvest 1 flower every 30min. Best for steady income.</div>
+          <span class="pet-rarity rarity-common">Common</span>
+        </div>
+        <div class="pet-card">
+          <span class="pet-emoji">🐕</span>
+          <div class="pet-name">Dog "Buddy"</div>
+          <div class="pet-info">Speed boost -10% growth time. Great for fast-growing flowers.</div>
+          <span class="pet-rarity rarity-common">Common</span>
+        </div>
+        <div class="pet-card">
+          <span class="pet-emoji">🐰</span>
+          <div class="pet-name">Rabbit "Coco"</div>
+          <div class="pet-info">Finds rare flowers during exploration. +5% rare flower chance.</div>
+          <span class="pet-rarity rarity-uncommon">Uncommon</span>
+        </div>
+        <div class="pet-card">
+          <span class="pet-emoji">🐦</span>
+          <div class="pet-name">Bird "Tweety"</div>
+          <div class="pet-info">Alerts you when flowers are ready to harvest. Saves tapping.</div>
+          <span class="pet-rarity rarity-uncommon">Uncommon</span>
+        </div>
+        <div class="pet-card">
+          <span class="pet-emoji">🦊</span>
+          <div class="pet-name">Fox "Ruby"</div>
+          <div class="pet-info">Gold bonus +15%. One of the best income pets.</div>
+          <span class="pet-rarity rarity-uncommon">Uncommon</span>
+        </div>
+        <div class="pet-card">
+          <span class="pet-emoji">🐿️</span>
+          <div class="pet-name">Squirrel "Nutty"</div>
+          <div class="pet-info">Collects bonus seeds during exploration. +3 seeds per trip.</div>
+          <span class="pet-rarity rarity-uncommon">Uncommon</span>
+        </div>
+        <div class="pet-card">
+          <span class="pet-emoji">🐹</span>
+          <div class="pet-name">Hamster "Peanut"</div>
+          <div class="pet-info">Increases gold per flower by +5%. Stacks with other gold pets.</div>
+          <span class="pet-rarity rarity-uncommon">Uncommon</span>
+        </div>
+        <div class="pet-card">
+          <span class="pet-emoji">🐇</span>
+          <div class="pet-name">Bunny "Snowball"</div>
+          <div class="pet-info">Auto-water 2 flowers every hour. Reduces manual work.</div>
+          <span class="pet-rarity rarity-uncommon">Uncommon</span>
+        </div>
+        <div class="pet-card">
+          <span class="pet-emoji">🦉</span>
+          <div class="pet-name">Owl "Hoot"</div>
+          <div class="pet-info">Night bonus: 2x gold during night hours (8PM-8AM).</div>
+          <span class="pet-rarity rarity-rare">Rare</span>
+        </div>
+        <div class="pet-card">
+          <span class="pet-emoji">🐈</span>
+          <div class="pet-name">Cat "Luna"</div>
+          <div class="pet-info">Auto-harvest 2 flowers every 20min + 10% gold bonus.</div>
+          <span class="pet-rarity rarity-rare">Rare</span>
+        </div>
+        <div class="pet-card">
+          <span class="pet-emoji">🐾</span>
+          <div class="pet-name">Dragon "Ember"</div>
+          <div class="pet-info">Legendary pet! Auto-fire clears weeds, 20% gold bonus.</div>
+          <span class="pet-rarity rarity-epic">Epic</span>
+        </div>
+        <div class="pet-card">
+          <span class="pet-emoji">🦄</span>
+          <div class="pet-name">Unicorn "Sparkle"</div>
+          <div class="pet-info">Increases gem drop rate by +10%. Best gem pet.</div>
+          <span class="pet-rarity rarity-epic">Epic</span>
+        </div>
+        <div class="pet-card">
+          <span class="pet-emoji">🐉</span>
+          <div class="pet-name">Phoenix "Flame"</div>
+          <div class="pet-info">Revives 1 dead flower per day + speed boost 15%.</div>
+          <span class="pet-rarity rarity-legendary">Legendary</span>
+        </div>
+        <div class="pet-card">
+          <span class="pet-emoji">🦋</span>
+          <div class="pet-name">Butterfly "Prism"</div>
+          <div class="pet-info">Attracts bonus flowers during exploration. +2 random flowers.</div>
+          <span class="pet-rarity rarity-legendary">Legendary</span>
+        </div>
+        <div class="pet-card">
+          <span class="pet-emoji">🐲</span>
+          <div class="pet-name">Dragon "Crystal"</div>
+          <div class="pet-info">All bonuses: 10% gold, 10% speed, auto-harvest. Ultimate pet.</div>
+          <span class="pet-rarity rarity-legendary">Legendary</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-card">
+      <h2>🗺️ Exploration Rewards</h2>
+      <p>Send your pets to explore the courtyard for bonus rewards. Each exploration takes 2-8 hours:</p>
+      <table class="exploration-table">
+        <tr><th>Duration</th><th>Pet Level Required</th><th>Rewards</th><th>Frequency</th></tr>
+        <tr><td>2 hours</td><td>Pet Lv. 1+</td><td>10 gold + 1 seed</td><td>Every 4h</td></tr>
+        <tr><td>4 hours</td><td>Pet Lv. 5+</td><td>50 gold + 3 seeds + 2 gems</td><td>Every 8h</td></tr>
+        <tr><td>6 hours</td><td>Pet Lv. 10+</td><td>200 gold + 8 seeds + 10 gems</td><td>Every 12h</td></tr>
+        <tr><td>8 hours</td><td>Pet Lv. 15+</td><td>500 gold + 20 seeds + 30 gems + rare item</td><td>Every 24h</td></tr>
+      </table>
+      <div class="tip">Always send your best pet on the longest available exploration. The 8-hour trip gives the best value and includes rare items.</div>
+    </div>
+
+    <div class="content-card">
+      <h2>🏠 Furniture Upgrades</h2>
+      <p>Furniture in the Pet Courtyard boosts your pets' abilities:</p>
+      <div class="furniture-grid">
+        <div class="furniture-card">
+          <h4>🏠 Pet House</h4>
+          <p>Level up to unlock more pet slots. Lv.1 = 1 slot, Lv.5 = 5 slots. Essential to max.</p>
+        </div>
+        <div class="furniture-card">
+          <h4>🥣 Food Bowl</h4>
+          <p>Increases pet food efficiency. Each level gives +10% exploration rewards.</p>
+        </div>
+        <div class="furniture-card">
+          <h4>🛏️ Pet Bed</h4>
+          <p>Reduces pet cooldown time. Faster exploration = more rewards per day.</p>
+        </div>
+        <div class="furniture-card">
+          <h4>🎾 Toy Chest</h4>
+          <p>Boosts pet happiness. Happy pets earn 15% more gold and gems.</p>
+        </div>
+        <div class="furniture-card">
+          <h4>🌳 Garden Tree</h4>
+          <p>Decorative but functional. Adds passive gold generation to the courtyard.</p>
+        </div>
+        <div class="furniture-card">
+          <h4>💧 Water Fountain</h4>
+          <p>Auto-waters nearby flowers. Reduces manual watering by 20%.</p>
+        </div>
+      </div>
+      <div class="tip">Upgrade the Pet House first (more slots = more pets = more bonuses). Then upgrade Food Bowl for exploration boost.</div>
+    </div>
+
+    <div class="content-card">
+      <h2>💡 Pet Strategy Tips</h2>
+      <ol>
+        <li><strong>Start with common pets</strong> — they give basic bonuses that help early progress</li>
+        <li><strong>Save gems for legendary pets</strong> — the Dragon and Phoenix pets are game-changers</li>
+        <li><strong>Always explore</strong> — even 2-hour trips are better than nothing</li>
+        <li><strong>Match pets to your playstyle</strong> — gold-focused? Get Fox + Hamster. Growth-focused? Get Dog + Phoenix</li>
+        <li><strong>Upgrade furniture before getting new pets</strong> — unlocked slots let you stack bonuses</li>
+        <li><strong>Don't ignore rare pets</strong> — even uncommon pets like Rabbit (rare flower finder) are worth it</li>
+      </ol>
+      <div class="warning">Legendary pets (Phoenix, Unicorn, Dragon) cost a lot of gems to unlock. Don't rush them — focus on gold income first, then invest in legends.</div>
+    </div>
+
+  </section>
+</div>
+
+<footer>
+  <p>🐾 My Garden Tale Pet Courtyard Guide — Updated daily</p>
+  <p style="margin-top:6px;">Not affiliated with Modo Game. Fan-made community guide.</p>
+</footer>
+
+</body>
+</html>

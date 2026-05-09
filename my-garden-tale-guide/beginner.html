@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Garden Tale Beginner Guide — Best Tips for New Players</title>
+<meta name="description" content="Complete My Garden Tale beginner guide: planting priority, gold management, leveling tips, and order strategy for new players.">
+<style>
+  :root {
+    --pink: #e8a0bf; --pink-dark: #c2185b; --green: #66bb6a; --green-dark: #2e7d32;
+    --gold: #f9a825; --bg: #fdf6f0; --bg-card: #ffffff; --text: #333; --text-light: #777;
+    --radius: 14px;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+  a { color: var(--pink-dark); text-decoration: none; } a:hover { text-decoration: underline; }
+  .hero { background: linear-gradient(135deg, #fce4ec, #f8bbd0, #e8a0bf); padding: 48px 20px 36px; text-align: center; }
+  .hero h1 { font-size: clamp(24px,4vw,42px); color: var(--pink-dark); }
+  .hero p { font-size: 15px; color: #6a1b4a; margin: 8px auto 0; max-width: 440px; }
+  .nav-bar { background: var(--pink-dark); display: flex; overflow-x: auto; scrollbar-width: none; }
+  .nav-bar::-webkit-scrollbar { display: none; }
+  .nav-bar a { color: rgba(255,255,255,.75); padding: 12px 16px; font-size: 13px; white-space: nowrap; border-bottom: 3px solid transparent; transition: .2s; }
+  .nav-bar a:hover, .nav-bar a.active { color: #fff; border-bottom-color: var(--gold); text-decoration: none; }
+  .container { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  .section { padding: 32px 0 16px; }
+  .section-title { font-size: 20px; font-weight: 700; margin-bottom: 14px; display:flex; align-items:center; gap:6px; }
+  .content-card { background: var(--bg-card); border-radius: var(--radius); padding: 22px 20px; margin-bottom: 16px; box-shadow: 0 1px 10px rgba(0,0,0,.06); }
+  .content-card h2 { font-size: 17px; margin-bottom: 10px; color: var(--pink-dark); }
+  .content-card h3 { font-size: 15px; margin: 14px 0 6px; color: #555; }
+  .content-card p, .content-card li { font-size: 14px; color: #444; }
+  .content-card ul, .content-card ol { padding-left: 20px; }
+  .content-card li { margin-bottom: 5px; }
+  .tip { background: #e8f5e9; border-left: 4px solid var(--green); padding: 12px 16px; border-radius: 0 10px 10px 0; font-size: 13px; margin: 12px 0; }
+  .tip::before { content: "💡 "; }
+  .warning { background: #fff3e0; border-left: 4px solid #fb8c00; padding: 12px 16px; border-radius: 0 10px 10px 0; font-size: 13px; margin: 12px 0; }
+  .warning::before { content: "⚠️ "; }
+  .danger { background: #fce4ec; border-left: 4px solid #e53935; padding: 12px 16px; border-radius: 0 10px 10px 0; font-size: 13px; margin: 12px 0; }
+  .danger::before { content: "🚫 "; }
+  .milestone { background: #e3f2fd; border-left: 4px solid #1e88e5; padding: 10px 14px; border-radius: 0 10px 10px 0; font-size: 13px; margin: 6px 0; }
+  .milestone::before { content: "🎯 "; }
+  .timeline { position: relative; padding-left: 24px; }
+  .timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 3px; background: #fce4ec; border-radius: 2px; }
+  .timeline-step { position: relative; padding: 14px 0 14px 16px; border-bottom: 1px solid #f0f0f0; }
+  .timeline-step::before { content: ''; position: absolute; left: -20px; top: 18px; width: 14px; height: 14px; background: var(--pink-dark); border: 3px solid #fce4ec; border-radius: 50%; }
+  .timeline-step h4 { font-size: 15px; color: var(--pink-dark); margin-bottom: 4px; }
+  .timeline-step p { font-size: 13px; color: #555; }
+  footer { background: #fce4ec; text-align: center; padding: 28px 16px; margin-top: 36px; font-size: 13px; color: var(--pink-dark); }
+  .toc { background: var(--bg-card); border-radius: var(--radius); padding: 18px 20px; margin-bottom: 16px; box-shadow: 0 1px 10px rgba(0,0,0,.06); }
+  .toc h3 { font-size: 15px; color: var(--pink-dark); margin-bottom: 8px; }
+  .toc a { display: inline-block; margin: 3px 12px 3px 0; font-size: 13px; color: var(--pink-dark); }
+  @media (max-width: 600px) { .container { padding: 0 10px; } }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>🌱 Beginner Guide</h1>
+  <p>Everything you need to know to start growing your garden empire.</p>
+</header>
+
+<nav class="nav-bar">
+  <a href="index.html">🏠 Home</a>
+  <a href="codes.html">🎁 Codes</a>
+  <a href="beginner.html" class="active">🌱 Beginner</a>
+  <a href="flowers.html">🌻 Flowers</a>
+  <a href="#">📋 Orders</a>
+  <a href="#">⭐ Guild</a>
+  <a href="#">🐾 Pets</a>
+</nav>
+
+<div class="container">
+
+  <!-- Table of Contents -->
+  <section class="section">
+    <div class="toc">
+      <h3>📑 Table of Contents</h3>
+      <a href="#core-loop">Core Game Loop</a>
+      <a href="#first-steps">First Steps</a>
+      <a href="#priority">Priority Checklist</a>
+      <a href="#gold">Gold & Gem Strategy</a>
+      <a href="#orders">Order Strategy</a>
+      <a href="#tools">Tool Upgrades</a>
+      <a href="#mistakes">Common Mistakes</a>
+      <a href="#timeline">Level Timeline</a>
+    </div>
+
+    <!-- Core Loop -->
+    <div class="content-card" id="core-loop">
+      <h2>🔄 Core Game Loop</h2>
+      <p>My Garden Tale's gameplay is simple but addictive:</p>
+      <div class="timeline">
+        <div class="timeline-step"><h4>1. Check Orders</h4><p>Look at what flowers your daily orders need. This tells you what to plant.</p></div>
+        <div class="timeline-step"><h4>2. Plant & Grow</h4><p>Plant the right flowers in the right order. Fast-growing ones first to generate cash.</p></div>
+        <div class="timeline-step"><h4>3. Harvest & Sell</h4><p>Harvest fully grown flowers and create bouquets for the orders.</p></div>
+        <div class="timeline-step"><h4>4. Level Up</h4><p>Use earned gold and XP to unlock new flowers, expand land, and upgrade tools.</p></div>
+        <div class="timeline-step"><h4>5. Repeat</h4><p>Each day brings new orders, new flowers to discover, and new challenges.</p></div>
+      </div>
+      <div class="tip">The key difference between casual and pro players: pros ALWAYS check orders before planting. Casual players plant randomly and waste time/money.</div>
+    </div>
+
+    <!-- First Steps -->
+    <div class="content-card" id="first-steps">
+      <h2>🌱 First Steps: Your First 30 Minutes</h2>
+      <h3>Step 1: Follow the Tutorial</h3>
+      <p>Don't skip the tutorial. It teaches the basics of planting, harvesting, and selling. But after it ends, follow our tips below.</p>
+
+      <h3>Step 2: Plant the Right First Flowers</h3>
+      <ul>
+        <li><strong>🌻 Sunflower</strong> — Fast growth, always in demand. Best starter flower.</li>
+        <li><strong>🌹 Rose</strong> — High payout per flower. Plant if any order needs it.</li>
+        <li><strong>🌼 Daisy</strong> — Very fast growth, cheap seed. Fill gaps between long-growth flowers.</li>
+        <li><strong>🌷 Tulip</strong> — Good balance of growth time and payout.</li>
+      </ul>
+
+      <h3>Step 3: Spend Gold Wisely</h3>
+      <div class="milestone">Priority #1: Expand land (more space = more flowers = more income)</div>
+      <div class="milestone">Priority #2: Upgrade shovel & watering can (time saved = huge)</div>
+      <div class="milestone">Priority #3: Unlock seed library (new flowers = new income)</div>
+
+      <div class="warning">Don't spend gold on decorations early! They don't generate income. Wait until all productive buildings are maxed.</div>
+    </div>
+
+    <!-- Priority Checklist -->
+    <div class="content-card" id="priority">
+      <h2>📋 Daily Priority Checklist</h2>
+      <p>Do these in order every day:</p>
+      <ol>
+        <li><strong>Collect</strong> all mail rewards and daily login bonuses</li>
+        <li><strong>Check orders</strong> — note which flowers appear most frequently</li>
+        <li><strong>Harvest</strong> all ready flowers immediately</li>
+        <li><strong>Plant</strong> based on today's orders (not what you feel like growing)</li>
+        <li><strong>Sell</strong> completed orders for bonus gold/gems</li>
+        <li><strong>Check guild quests</strong> — contribute before they expire</li>
+        <li><strong>Check codes page</strong> — redeem any new codes we've posted</li>
+        <li><strong>Visit pet courtyard</strong> — collect exploration rewards</li>
+        <li><strong>Level up</strong> — invest gold in your top priority</li>
+      </ol>
+      <div class="tip">If you do nothing else, do steps 1-4 every day. That's 80% of your progress.</div>
+    </div>
+
+    <!-- Gold & Gem Strategy -->
+    <div class="content-card" id="gold">
+      <h2>💰 Gold & Gem Spending Strategy</h2>
+      <h3>Gold Spending Priority</h3>
+      <table style="width:100%;border-collapse:collapse;font-size:13px;margin-bottom:10px;">
+        <tr style="background:#fce4ec;"><th style="padding:8px;text-align:left;color:#c2185b;">Priority</th><th style="padding:8px;text-align:left;color:#c2185b;">Spend On</th><th style="padding:8px;text-align:left;color:#c2185b;">Why</th></tr>
+        <tr><td style="padding:7px 8px;">🥇 #1</td><td style="padding:7px 8px;">Land Expansion</td><td style="padding:7px 8px;">More flowers = more income</td></tr>
+        <tr><td style="padding:7px 8px;">🥈 #2</td><td style="padding:7px 8px;">Tool Upgrades</td><td style="padding:7px 8px;">Saves hours of tapping per week</td></tr>
+        <tr><td style="padding:7px 8px;">🥉 #3</td><td style="padding:7px 8px;">Seed Library</td><td style="padding:7px 8px;">Unlocks more income sources</td></tr>
+        <tr><td style="padding:7px 8px;">4️⃣</td><td style="padding:7px 8px;">Building Upgrades</td><td style="padding:7px 8px;">Boosts output</td></tr>
+        <tr><td style="padding:7px 8px;">5️⃣</td><td style="padding:7px 8px;">Decorations</td><td style="padding:7px 8px;">Cosmetic only</td></tr>
+      </table>
+
+      <h3>Gem Spending Priority</h3>
+      <ol>
+        <li><strong>Limited Events</strong> — best gem value during events</li>
+        <li><strong>Land Expansion</strong> — if no events available</li>
+        <li><strong>Speed-ups for buildings</strong> — only when close to max level</li>
+        <li><strong>Avoid:</strong> Regular shop purchases & non-event gacha</li>
+      </ol>
+      <div class="danger">Never spend gems on regular gacha unless it's a guaranteed reward event. 90% of the time it's a waste.</div>
+    </div>
+
+    <!-- Order Strategy -->
+    <div class="content-card" id="orders">
+      <h2>📋 Daily Orders Strategy</h2>
+      <p>Orders are the heart of My Garden Tale. Here's how to master them:</p>
+
+      <h3>Reading Order Priority</h3>
+      <ul>
+        <li><strong>Most frequent = most important</strong> — if 3 orders need roses today, prioritize rose planting</li>
+        <li><strong>Highest payout = urgency</strong> — premium bouquets with gem rewards take priority</li>
+        <li><strong>Closest deadline</strong> — complete expiring orders first</li>
+      </ul>
+
+      <h3>Order Fulfillment Tips</h3>
+      <ul>
+        <li>Keep a "buffer" of fast-growing flowers (daisy, sunflower) in case new orders appear</li>
+        <li>Don't wait until the last day — orders often expire mid-day</li>
+        <li>Stock up on the same flower type when possible (e.g., if 3 orders need roses, plant 3x roses at once)</li>
+        <li>Use speed-up items on order completion, not planting (better ROI)</li>
+      </ul>
+      <div class="tip">Pro strategy: Save your best flowers for orders. Don't sell flowers on the open market — they're worth 3-5x more in orders.</div>
+    </div>
+
+    <!-- Tool Upgrades -->
+    <div class="content-card" id="tools">
+      <h2>🔧 Tool Upgrade Guide</h2>
+      <table style="width:100%;border-collapse:collapse;font-size:13px;">
+        <tr style="background:#fce4ec;"><th style="padding:8px;text-align:left;color:#c2185b;">Tool</th><th style="padding:8px;text-align:left;color:#c2185b;">LV1</th><th style="padding:8px;text-align:left;color:#c2185b;">LV3</th><th style="padding:8px;text-align:left;color:#c2185b;">LV5 (Max)</th></tr>
+        <tr><td style="padding:7px 8px;">🪓 Shovel</td><td style="padding:7px 8px;">Dig 1 grid</td><td style="padding:7px 8px;">Dig 3 grids</td><td style="padding:7px 8px;">Dig 5 grids</td></tr>
+        <tr><td style="padding:7px 8px;">💧 Watering Can</td><td style="padding:7px 8px;">Water 1 grid</td><td style="padding:7px 8px;">Water 3 grids</td><td style="padding:7px 8px;">Auto-water</td></tr>
+        <tr><td style="padding:7px 8px;">🌫️ Sprayer</td><td style="padding:7px 8px;">Kill 1 pest</td><td style="padding:7px 8px;">Kill 3 pests</td><td style="padding:7px 8px;">Full-screen clear</td></tr>
+        <tr><td style="padding:7px 8px;">✂️ Shears</td><td style="padding:7px 8px;">Harvest 1 flower</td><td style="padding:7px 8px;">Harvest 3 flowers</td><td style="padding:7px 8px;">Harvest all</td></tr>
+      </table>
+      <div class="tip">Upgrade Shovel and Watering Can first. They save the most time. Sprayer and Shears can wait until you have excess gold.</div>
+    </div>
+
+    <!-- Common Mistakes -->
+    <div class="content-card" id="mistakes">
+      <h2>🚫 7 Common Beginner Mistakes</h2>
+      <ol>
+        <li><strong>Planting random flowers</strong> — always check orders first (see above)</li>
+        <li><strong>Buying decorations before tools</strong> — decorative buildings don't make money</li>
+        <li><strong>Spending gems on regular gacha</strong> — save for events only</li>
+        <li><strong>Ignoring the seed library</strong> — more flower types = more order opportunities</li>
+        <li><strong>Not joining a guild early</strong> — guild bonuses compound over time</li>
+        <li><strong>Leaving flowers unharvested</strong> — overgrown flowers can die or lose value</li>
+        <li><strong>Selling flowers on the market instead of orders</strong> — orders pay 3-5x more</li>
+      </ol>
+      <div class="warning">The #1 mistake is planting without checking orders. This wastes your most valuable resource: time.</div>
+    </div>
+
+    <!-- Level Timeline -->
+    <div class="content-card" id="timeline">
+      <h2>📈 Level Progression Timeline</h2>
+      <p>What to expect as you level up:</p>
+      <div class="timeline">
+        <div class="timeline-step"><h4>Lv. 1-5 (First Day)</h4><p>Learn basics, unlock sunflowers & roses. Focus on gold generation.</p></div>
+        <div class="timeline-step"><h4>Lv. 5-10 (Days 2-3)</h4><p>Unlock tulips & cherry blossoms. Start expanding land. Join a guild.</p></div>
+        <div class="timeline-step"><h4>Lv. 10-20 (Week 1)</h4><p>Seed library fully available. Tool upgrades to LV3. First major investment phase.</p></div>
+        <div class="timeline-step"><h4>Lv. 20-30 (Week 2-3)</h4><p>Unlock rare flowers. Building upgrades become relevant. Guild events start.</p></div>
+        <div class="timeline-step"><h4>Lv. 30+ (Month 1+)</h4><p>Full flower collection. Max tools unlocked. Focus on pet courtyard & outfit collections.</p></div>
+      </div>
+    </div>
+
+  </section>
+
+</div>
+
+<footer>
+  <p>🌱 My Garden Tale Beginner Guide — Updated daily</p>
+  <p style="margin-top:6px;">Not affiliated with Modo Game. Fan-made community guide.</p>
+</footer>
+
+</body>
+</html>

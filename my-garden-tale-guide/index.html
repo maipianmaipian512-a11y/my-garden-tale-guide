@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Garden Tale Guide — Flowers, Codes, Orders & Tips</title>
+<meta name="description" content="Complete My Garden Tale guide: flower encyclopedia, daily orders strategy, codes, guild & pet courtyard tips. Updated daily.">
+<style>
+  :root {
+    --pink: #e8a0bf;
+    --pink-dark: #c2185b;
+    --green: #66bb6a;
+    --green-dark: #2e7d32;
+    --gold: #f9a825;
+    --bg: #fdf6f0;
+    --bg-card: #ffffff;
+    --text: #333;
+    --text-light: #777;
+    --radius: 14px;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", "Noto Sans SC", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  a { color: var(--pink-dark); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* --- Hero --- */
+  .hero {
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 40%, #e8a0bf 100%);
+    padding: 56px 20px 44px;
+    text-align: center;
+  }
+  .hero h1 { font-size: clamp(26px,4.5vw,46px); color: var(--pink-dark); }
+  .hero p { font-size: 17px; color: #6a1b4a; margin: 10px auto 0; max-width: 480px; }
+
+  /* --- Nav --- */
+  .nav-bar {
+    background: var(--pink-dark);
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .nav-bar::-webkit-scrollbar { display: none; }
+  .nav-bar a {
+    color: rgba(255,255,255,.75);
+    padding: 12px 16px;
+    font-size: 13px;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: .2s;
+  }
+  .nav-bar a:hover, .nav-bar a.active { color:#fff; border-bottom-color: var(--gold); text-decoration:none; }
+
+  /* --- Container --- */
+  .container { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+
+  /* --- Stats --- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px,1fr));
+    gap: 12px;
+    margin: 28px auto 28px;
+    max-width: 760px;
+  }
+  .stat {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 16px 10px;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0,0,0,.08);
+  }
+  .stat .n { font-size: 26px; font-weight: 700; color: var(--pink-dark); }
+  .stat .l { font-size: 12px; color: var(--text-light); }
+
+  /* --- Section --- */
+  .section { padding: 36px 0 16px; }
+  .section-title { font-size: 21px; font-weight: 700; margin-bottom: 16px; display:flex; align-items:center; gap:6px; }
+
+  /* --- Quick Links --- */
+  .quick-links { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap:14px; margin-bottom: 10px; }
+  .ql-card {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 22px 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.06);
+    transition: transform .2s;
+    display: block;
+  }
+  .ql-card:hover { transform: translateY(-3px); }
+  .ql-card .icon { font-size: 30px; margin-bottom: 8px; }
+  .ql-card h3 { font-size: 16px; margin-bottom: 4px; }
+  .ql-card p { font-size: 13px; color: var(--text-light); }
+  .ql-card .tag {
+    display: inline-block; margin-top: 8px; font-size: 11px;
+    background: #fce4ec; color: var(--pink-dark); padding: 2px 8px; border-radius: 8px;
+  }
+
+  /* --- Content blocks --- */
+  .content-card {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 24px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 10px rgba(0,0,0,.06);
+  }
+  .content-card h2 { font-size: 18px; margin-bottom: 12px; color: var(--pink-dark); }
+  .content-card p, .content-card li { font-size: 14px; line-height: 1.7; color: #444; }
+  .content-card ul { padding-left: 20px; }
+  .content-card li { margin-bottom: 4px; }
+
+  /* --- Tip box --- */
+  .tip {
+    background: #e8f5e9;
+    border-left: 4px solid var(--green);
+    padding: 12px 16px;
+    border-radius: 0 10px 10px 0;
+    font-size: 13px;
+    margin: 14px 0;
+  }
+  .tip::before { content: "💡 "; }
+
+  /* --- Table --- */
+  .guide-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .guide-table th { background: #fce4ec; color: var(--pink-dark); padding: 10px 12px; text-align: left; font-weight: 600; }
+  .guide-table td { padding: 9px 12px; border-bottom: 1px solid #f0f0f0; }
+  .guide-table tr:hover td { background: #fff5f8; }
+
+  /* --- Footer --- */
+  footer {
+    background: #fce4ec;
+    text-align: center;
+    padding: 28px 16px;
+    margin-top: 36px;
+    font-size: 13px;
+    color: var(--pink-dark);
+  }
+
+  @media (max-width: 600px) {
+    .quick-links { grid-template-columns: 1fr; }
+    .stats { margin: -20px 10px 22px; }
+    .container { padding: 0 10px; }
+    .guide-table { font-size: 12px; }
+    .guide-table th, .guide-table td { padding: 7px 8px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>🌸 My Garden Tale Guide</h1>
+  <p>Your complete companion: flowers, orders, codes, guild & pet tips — updated daily.</p>
+</header>
+
+<nav class="nav-bar" id="nav">
+  <a href="#home" class="active">🏠 Home</a>
+  <a href="codes.html">🎁 Codes</a>
+  <a href="beginner.html">🌱 Beginner</a>
+  <a href="flowers.html">🌻 Flowers</a>
+  <a href="orders.html">📋 Orders</a>
+  <a href="guild.html">⭐ Guild</a>
+  <a href="pets.html">🐾 Pets</a>
+  <a href="outfits.html">👗 Outfits</a>
+</nav>
+
+<div class="container">
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat"><div class="n">52</div><div class="l">Flowers</div></div>
+    <div class="stat"><div class="n">5</div><div class="l">Codes Page</div></div>
+    <div class="stat"><div class="n">3</div><div class="l">Pages Done</div></div>
+    <div class="stat"><div class="n">∞</div><div class="l">Outfits Page</div></div>
+  </div>
+
+  <!-- Quick Links -->
+  <section class="section" id="home">
+    <h2 class="section-title">🔥 Quick Start</h2>
+    <div class="quick-links">
+
+      <a class="ql-card" href="codes.html">
+        <div class="icon">🎁</div>
+        <h3>Codes & Free Rewards</h3>
+        <p>All working codes for gems, gold, boosters. Updated daily.</p>
+        <span class="tag">🔥 Most Popular</span>
+      </a>
+
+      <a class="ql-card" href="beginner.html">
+        <div class="icon">🌱</div>
+        <h3>Beginner Guide</h3>
+        <p>First steps, planting priority, gold strategy & leveling tips.</p>
+        <span class="tag">📌 Must Read</span>
+      </a>
+
+      <a class="ql-card" href="flowers.html">
+        <div class="icon">🌻</div>
+        <h3>Flower Encyclopedia</h3>
+        <p>Growth time, rarity, uses, upgrade value & order demand for 200+ flowers.</p>
+        <span class="tag">📚 Encyclopedia</span>
+      </a>
+
+      <a class="ql-card" href="orders.html">
+        <div class="icon">📋</div>
+        <h3>Daily Guild Page</h3>
+        <p>How to read orders, prioritize planting & maximize profit.</p>
+        <span class="tag">💡 Essential</span>
+      </a>
+
+      <a class="ql-card" href="guild.html">
+        <div class="icon">⭐</div>
+        <h3>Guild Guide</h3>
+        <p>Joining guilds, guild quests, events & rewards explained.</p>
+        <span class="tag">👥 Social</span>
+      </a>
+
+
+        <div class="icon">🐾</div>
+        <h3>Pet Courtyard</h3>
+        <p>Every pet species, exploration rewards & furniture strategy.</p>
+        <span class="tag">🎮 Guide</span>
+      </a>
+
+
+      <a class="ql-card" href="outfits.html">
+        <div class="icon">👗</div>
+        <h3>Outfits & Dress Up</h3>
+        <p>Costume sets, rarity tiers & collecting rare outfits.</p>
+        <span class="tag">✨ Fashion</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Today's Priority -->
+  <section class="section">
+    <h2 class="section-title">📌 Today's Priority Tips</h2>
+    <div class="content-card">
+      <h2>🌸 Order Priority Rule: Always Check Before Planting</h2>
+      <p>My Garden Tale's core loop: <strong>check daily orders → plant flowers the orders need → harvest → sell bouquets</strong>. Many beginners plant first and sell later, which wastes time and money.</p>
+      <ul>
+        <li>Always check your order board <em>before</em> planting new seeds</li>
+        <li>Prioritize flowers that appear in <strong>multiple orders</strong> today</li>
+        <li>Skip planting rare flowers with zero orders — they take too long for low payout</li>
+        <li>Save your gems for events, not regular shop purchases</li>
+      </ul>
+      <div class="tip">Pro tip: Flowers used in the most orders usually give the best return on investment. Check the Guild Page page for a full priority chart.</div>
+    </div>
+
+    <div class="content-card">
+      <h2>💰 Gold & Gem Spending Priority</h2>
+      <table class="guide-table">
+        <tr><th>Priority</th><th>What to Buy</th><th>Why</th></tr>
+        <tr><td>🥇 #1</td><td>Land Expansion</td><td>More space = more flowers = more income. Always first.</td></tr>
+        <tr><td>🥈 #2</td><td>Tool Upgrades (Shovel, Watering Can)</td><td>Auto-expand ranges save huge amounts of taps per day.</td></tr>
+        <tr><td>🥉 #3</td><td>Seed Library Unlock</td><td>New flowers = new orders = more income sources.</td></tr>
+        <tr><td>4️⃣</td><td>Building Upgrades</td><td>Boosts output but less urgent than tools.</td></tr>
+        <tr><td>5️⃣</td><td>Decorations</td><td>Cosmetic only. Buy only after all productive buildings are maxed.</td></tr>
+      </table>
+      <div class="tip">Gem spending: Limited Events → Land Expansion → Building Speed-ups → Regular Gacha (last resort).</div>
+    </div>
+  </section>
+
+  <!-- Flower Pre-Upgrade Tips -->
+  <section class="section">
+    <h2 class="section-title">🏆 Flowers Worth Upgrading First</h2>
+    <div class="content-card">
+      <table class="guide-table">
+        <tr><th>Tier</th><th>Flower</th><th>Why Upgrade</th><th>Unlock</th></tr>
+        <tr><td style="color:#e53935;font-weight:700;">S</td><td>🌹 Rose</td><td>Highest order demand & payout</td><td>Lv. 1</td></tr>
+        <tr><td style="color:#e53935;font-weight:700;">S</td><td>🌻 Sunflower</td><td>Fast growth + high volume orders</td><td>Lv. 1</td></tr>
+        <tr><td style="color:#fb8c00;font-weight:700;">A</td><td>🌷 Tulip</td><td>Great early-game income ratio</td><td>Lv. 5</td></tr>
+        <tr><td style="color:#fb8c00;font-weight:700;">A</td><td>🌸 Cherry Blossom</td><td>Event flower, premium bouquets</td><td>Lv. 10</td></tr>
+        <tr><td style="color:#f9a825;font-weight:700;">B</td><td>🌼 Daisy</td><td>Quick growth, low cost, steady income</td><td>Lv. 3</td></tr>
+      </table>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>🌸 My Garden Tale Guide — Daily updates for codes, flowers & tips</p>
+  <p style="margin-top:6px;">Not affiliated with Modo Game. Fan-made community guide.</p>
+</footer>
+
+<script>
+  // Nav highlight on scroll
+  const sections = document.querySelectorAll('.section[id]');
+  const navLinks = document.querySelectorAll('.nav-bar a');
+  window.addEventListener('scroll', () => {
+    let cur = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+    navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
+  });
+  navLinks.forEach(a => {
+    a.addEventListener('click', e => {
+      if (a.getAttribute('href').startsWith('#')) {
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

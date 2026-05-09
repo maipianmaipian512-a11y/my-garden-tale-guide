@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Garden Tale Orders Guide — Daily Order Strategy & Priority</title>
+<meta name="description" content="Master My Garden Tale daily orders: priority chart, bouquet combinations, fulfillment strategy, and profit optimization tips.">
+<style>
+  :root { --pink:#e8a0bf;--pink-dark:#c2185b;--green:#66bb6a;--green-dark:#2e7d32;--gold:#f9a825;--bg:#fdf6f0;--bg-card:#fff;--text:#333;--text-light:#777;--radius:14px; }
+  *{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}a{color:var(--pink-dark);text-decoration:none}a:hover{text-decoration:underline}
+  .hero{background:linear-gradient(135deg,#fce4ec,#f8bbd0,#e8a0bf);padding:48px 20px 36px;text-align:center}.hero h1{font-size:clamp(24px,4vw,42px);color:var(--pink-dark)}.hero p{font-size:15px;color:#6a1b4a;margin:8px auto 0;max-width:440px}
+  .nav-bar{background:var(--pink-dark);display:flex;overflow-x:auto;scrollbar-width:none}.nav-bar::-webkit-scrollbar{display:none}.nav-bar a{color:rgba(255,255,255,.75);padding:12px 16px;font-size:13px;white-space:nowrap;border-bottom:3px solid transparent;transition:.2s}.nav-bar a:hover,.nav-bar a.active{color:#fff;border-bottom-color:var(--gold);text-decoration:none}
+  .container{max-width:900px;margin:0 auto;padding:0 16px}.section{padding:32px 0 16px}.section-title{font-size:20px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:6px}
+  .content-card{background:var(--bg-card);border-radius:var(--radius);padding:22px 20px;margin-bottom:16px;box-shadow:0 1px 10px rgba(0,0,0,.06)}.content-card h2{font-size:17px;margin-bottom:10px;color:var(--pink-dark)}.content-card h3{font-size:15px;margin:12px 0 6px;color:#555}.content-card p,.content-card li{font-size:14px;color:#444}.content-card ul{padding-left:20px}li{margin-bottom:4px}
+  .tip{background:#e8f5e9;border-left:4px solid var(--green);padding:12px 16px;border-radius:0 10px 10px 0;font-size:13px;margin:12px 0}.tip::before{content:"💡 "}
+  .warning{background:#fff3e0;border-left:4px solid #fb8c00;padding:12px 16px;border-radius:0 10px 10px 0;font-size:13px;margin:12px 0}.warning::before{content:"⚠️ "}
+  .danger{background:#fce4ec;border-left:4px solid #e53935;padding:12px 16px;border-radius:0 10px 10px 0;font-size:13px;margin:12px 0}.danger::before{content:"🚫 "}
+  footer{background:#fce4ec;text-align:center;padding:28px 16px;margin-top:36px;font-size:13px;color:var(--pink-dark)}
+  .order-list{margin-top:12px}
+  .order-item{display:flex;align-items:center;gap:12px;padding:14px;background:var(--bg-card);border-radius:var(--radius);margin-bottom:8px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+  .order-emoji{font-size:32px}
+  .order-info{flex:1}
+  .order-info .name{font-weight:600;font-size:15px}
+  .order-info .detail{font-size:13px;color:var(--text-light)}
+  .order-reward{font-size:13px;font-weight:700;color:var(--pink-dark);white-space:nowrap}
+  .order-priority{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff;flex-shrink:0}
+  .prio-s{background:#e53935}.prio-a{background:#fb8c00}.prio-b{background:#f9a825;color:#333}.prio-c{background:#90a4ae}
+  .strategy-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:12px}
+  .strategy-card{background:var(--bg-card);border-radius:var(--radius);padding:16px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+  .strategy-card h4{font-size:14px;color:var(--pink-dark);margin-bottom:6px}
+  .strategy-card p{font-size:13px;color:#555}
+  .combo-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}
+  .combo-table th{background:#fce4ec;color:var(--pink-dark);padding:8px 10px;text-align:left;font-weight:600}
+  .combo-table td{padding:7px 10px;border-bottom:1px solid #f0f0f0}
+  .combo-table tr:hover td{background:#fff5f8}
+  @media(max-width:600px){.container{padding:0 10px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>📋 Daily Orders Guide</h1>
+  <p>Master the order system to maximize your income and progress faster.</p>
+</header>
+
+<nav class="nav-bar">
+  <a href="index.html">🏠 Home</a>
+  <a href="codes.html">🎁 Codes</a>
+  <a href="beginner.html">🌱 Beginner</a>
+  <a href="flowers.html">🌻 Flowers</a>
+  <a href="orders.html" class="active">📋 Orders</a>
+  <a href="guild.html">⭐ Guild</a>
+  <a href="pets.html">🐾 Pets</a>
+</nav>
+
+<div class="container">
+
+  <section class="section">
+
+    <!-- Core Concept -->
+    <div class="content-card">
+      <h2>🎯 Why Orders Are Everything</h2>
+      <p>Orders are the most important system in My Garden Tale. They determine what you should plant each day, and fulfilling them gives you <strong>3-5x more gold</strong> than selling to the shop.</p>
+      <div class="tip">Golden Rule: <strong>Check orders BEFORE you plant.</strong> 90% of progress comes from planting the right flowers at the right time.</div>
+    </div>
+
+    <!-- Today's Sample Orders -->
+    <div class="content-card">
+      <h2>📋 Today's Order Examples (Day 1-3)</h2>
+      <p>Here are typical orders you'll see in the early game:</p>
+      <div class="order-list">
+        <div class="order-item">
+          <div class="order-prio prio-s">1</div>
+          <div class="order-emoji">🌹</div>
+          <div class="order-info">
+            <div class="name">Rose Bouquet (x3)</div>
+            <div class="detail">Priority: S | Deadline: 6h | Payout: 2,500 gold + 50 gems</div>
+          </div>
+          <div class="order-reward">💎 50</div>
+        </div>
+        <div class="order-item">
+          <div class="order-prio prio-s">2</div>
+          <div class="order-emoji">🌻</div>
+          <div class="order-info">
+            <div class="name">Sunflower Bundle (x5)</div>
+            <div class="detail">Priority: S | Deadline: 4h | Payout: 1,800 gold</div>
+          </div>
+          <div class="order-reward">💰 1.8k</div>
+        </div>
+        <div class="order-item">
+          <div class="order-prio prio-a">3</div>
+          <div class="order-emoji">🌷</div>
+          <div class="order-info">
+            <div class="name">Tulip Bouquet (x2)</div>
+            <div class="detail">Priority: A | Deadline: 8h | Payout: 1,200 gold + 20 gems</div>
+          </div>
+          <div class="order-reward">💎 20</div>
+        </div>
+        <div class="order-item">
+          <div class="order-prio prio-a">4</div>
+          <div class="order-emoji">🌺</div>
+          <div class="order-info">
+            <div class="name">Orchid Arrangement (x1)</div>
+            <div class="detail">Priority: A | Deadline: 12h | Payout: 3,000 gold</div>
+          </div>
+          <div class="order-reward">💰 3k</div>
+        </div>
+        <div class="order-item">
+          <div class="order-prio prio-b">5</div>
+          <div class="order-emoji">🌼</div>
+          <div class="order-info">
+            <div class="name">Daisy Gift (x4)</div>
+            <div class="detail">Priority: B | Deadline: 3h | Payout: 600 gold</div>
+          </div>
+          <div class="order-reward">💰 600</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Priority Chart -->
+    <div class="content-card">
+      <h2>🏆 Order Priority Chart</h2>
+      <table class="combo-table">
+        <tr><th>Priority</th><th>What to Do</th><th>Why</th></tr>
+        <tr><td style="color:#e53935;font-weight:700;">🔴 S</td><td>Do immediately, highest payout</td><td>Contains rare flowers or gem rewards</td></tr>
+        <tr><td style="color:#fb8c00;font-weight:700;">🟠 A</td><td>Plant after S orders are done</td><td>Good payout, manageable growth time</td></tr>
+        <tr><td style="color:#f9a825;font-weight:700;">🟡 B</td><td>Fill in during idle time</td><td>Quick growth, fills gaps</td></tr>
+        <tr><td style="color:#90a4ae;font-weight:700;">🔵 C</td><td>Do last, low value</td><td>Minimal impact on progress</td></tr>
+      </table>
+    </div>
+
+    <!-- Strategy -->
+    <div class="content-card">
+      <h2>⚡ Order Fulfillment Strategy</h2>
+      <div class="strategy-grid">
+        <div class="strategy-card">
+          <h4>🌱 Step 1: Check All Orders First</h4>
+          <p>Don't rush to plant. Look at all 5-8 orders and identify the S/A priority ones. Note which flowers appear multiple times.</p>
+        </div>
+        <div class="strategy-card">
+          <h4>🌻 Step 2: Plant High-Demand Flowers First</h4>
+          <p>If 3 orders need roses, plant all roses together. Same for sunflowers and tulips — they grow fast and appear most often.</p>
+        </div>
+        <div class="strategy-card">
+          <h4>⏰ Step 3: Check Deadlines</h4>
+          <p>Prioritize orders with the shortest deadline first. Fast-growing flowers fill quickly; slow ones need advance planting.</p>
+        </div>
+        <div class="strategy-card">
+          <h4>💰 Step 4: Balance Fast + High-Value</h4>
+          <p>Mix fast-growing flowers (daisy, sunflower) for steady income with high-value ones (rose, orchid) for big payouts.</p>
+        </div>
+        <div class="strategy-card">
+          <h4>🔄 Step 5: Harvest & Sell Before New Orders Refresh</h4>
+          <p>Orders refresh daily. Finish as many as possible before the refresh to maximize your daily gold.</p>
+        </div>
+        <div class="strategy-card">
+          <h4>💎 Step 6: Save Gem Rewards for Events</h4>
+          <p>Don't spend gem order rewards immediately. Save them for limited-time events with better exchange rates.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Best Bouquet Combos -->
+    <div class="content-card">
+      <h2>💐 Best Bouquet Combinations</h2>
+      <p>These bouquet combos appear most frequently in orders and are the most profitable:</p>
+      <table class="combo-table">
+        <tr><th>Bouquet</th><th>Flowers Needed</th><th>Typical Payout</th><th>Difficulty</th></tr>
+        <tr><td>🌹🌹🌹 Rose Bouquet</td><td>3 Roses</td><td>2,000-3,000 gold</td><td>Easy</td></tr>
+        <tr><td>🌻🌻🌻🌻🌻 Sunflower Bundle</td><td>5 Sunflowers</td><td>1,500-2,000 gold</td><td>Easy</td></tr>
+        <tr><td>🌹🌸 Rose + Cherry Bouquet</td><td>2 Roses + 2 Cherry</td><td>4,000-5,000 gold</td><td>Medium</td></tr>
+        <tr><td>🌷🌺🌹 Tulip-Orchid-Rose Mix</td><td>2 of each</td><td>3,500-4,500 gold</td><td>Medium</td></tr>
+        <tr><td>🌻🌹🌺🌸🌷🌼 Grand Mix</td><td>1 of 6 types</td><td>6,000-8,000 gold</td><td>Hard</td></tr>
+      </table>
+      <div class="tip">The Grand Mix bouquet is the most valuable but requires the most flowers. If you have enough land and tools, always prioritize these.</div>
+    </div>
+
+    <!-- Common Mistakes -->
+    <div class="content-card">
+      <h2>🚫 Order Mistakes to Avoid</h2>
+      <ol>
+        <li><strong>Planting without checking orders</strong> — wastes time and gold on flowers nobody needs today</li>
+        <li><strong>Selling to shop instead of fulfilling orders</strong> — orders pay 3-5x more than the open market</li>
+        <li><strong>Ignoring deadlines</strong> — expired orders mean lost gold and gems</li>
+        <li><strong>Planting only one type</strong> — diversify to cover all order combinations</li>
+        <li><strong>Not saving speed-ups for order completion</strong> — use speed-ups to rush high-value orders</li>
+        <li><strong>Forgetting about long-growth flowers</strong> — orchids and peonies take hours; plant them early</li>
+      </ol>
+      <div class="danger">The #1 mistake: selling flowers to the shop instead of fulfilling orders. Every flower sold to the shop is 80% less gold than fulfilling the order.</div>
+    </div>
+
+  </section>
+</div>
+
+<footer>
+  <p>📋 My Garden Tale Orders Guide — Updated daily</p>
+  <p style="margin-top:6px;">Not affiliated with Modo Game. Fan-made community guide.</p>
+</footer>
+
+</body>
+</html>
