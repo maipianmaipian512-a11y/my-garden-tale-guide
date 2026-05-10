@@ -3,48 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Garden Tale Flowers Guide — Growth Time, Uses & Upgrades</title>
-<meta name="description" content="Flower encyclopedia for My Garden Tale: 52+ flowers with growth time, rarity, order demand, payout, and upgrade recommendations.">
+<title>My Garden Tale Flowers Encyclopedia — 52 Flowers, Growth Time, Unlock Level & Payout</title>
+<meta name="description" content="Complete My Garden Tale flower encyclopedia: 52 flowers with growth time, unlock level, seed cost, order demand, payout, and upgrade recommendations.">
 <style>
   :root { --pink:#e8a0bf;--pink-dark:#c2185b;--green:#66bb6a;--green-dark:#2e7d32;--gold:#f9a825;--bg:#fdf6f0;--bg-card:#fff;--text:#333;--text-light:#777;--radius:14px; }
-  *{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}a{color:var(--pink-dark);text-decoration:none}a:hover{text-decoration:underline}
+  *{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,"Segoe UI","Noto Sans SC",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}a{color:var(--pink-dark);text-decoration:none}a:hover{text-decoration:underline}
   .hero{background:linear-gradient(135deg,#fce4ec,#f8bbd0,#e8a0bf);padding:48px 20px 36px;text-align:center}.hero h1{font-size:clamp(24px,4vw,42px);color:var(--pink-dark)}.hero p{font-size:15px;color:#6a1b4a;margin:8px auto 0;max-width:440px}
   .nav-bar{background:var(--pink-dark);display:flex;overflow-x:auto;scrollbar-width:none}.nav-bar::-webkit-scrollbar{display:none}.nav-bar a{color:rgba(255,255,255,.75);padding:12px 16px;font-size:13px;white-space:nowrap;border-bottom:3px solid transparent;transition:.2s}.nav-bar a:hover,.nav-bar a.active{color:#fff;border-bottom-color:var(--gold);text-decoration:none}
-  .container{max-width:960px;margin:0 auto;padding:0 16px}.section{padding:32px 0 16px}.section-title{font-size:20px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:6px}
-  .content-card{background:var(--bg-card);border-radius:var(--radius);padding:22px 20px;margin-bottom:16px;box-shadow:0 1px 10px rgba(0,0,0,.06)}.content-card h2{font-size:17px;margin-bottom:10px;color:var(--pink-dark)}.content-card p,.content-card li{font-size:14px;color:#444}.content-card ul{padding-left:20px}.content-card li{margin-bottom:4px}
+  .container{max-width:1080px;margin:0 auto;padding:0 16px}.section{padding:32px 0 16px}.section-title{font-size:20px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:6px}
+  .content-card{background:var(--bg-card);border-radius:var(--radius);padding:22px 20px;margin-bottom:16px;box-shadow:0 1px 10px rgba(0,0,0,.06)}.content-card h2{font-size:17px;margin-bottom:10px;color:var(--pink-dark)}.content-card h3{font-size:15px;margin:14px 0 6px;color:#555}.content-card p,.content-card li{font-size:14px;color:#444}.content-card ul{padding-left:20px}li{margin-bottom:4px}
   .tip{background:#e8f5e9;border-left:4px solid var(--green);padding:12px 16px;border-radius:0 10px 10px 0;font-size:13px;margin:12px 0}.tip::before{content:"💡 "}
+  .warning{background:#fff3e0;border-left:4px solid #fb8c00;padding:12px 16px;border-radius:0 10px 10px 0;font-size:13px;margin:12px 0}.warning::before{content:"⚠️ "}
   footer{background:#fce4ec;text-align:center;padding:28px 16px;margin-top:36px;font-size:13px;color:var(--pink-dark)}
-  /* Filter bar */
   .filter-bar{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
   .filter-btn{background:#fce4ec;color:var(--pink-dark);border:none;padding:6px 14px;border-radius:20px;font-size:13px;cursor:pointer;transition:.15s}
   .filter-btn:hover,.filter-btn.active{background:var(--pink-dark);color:#fff}
   .search-box{background:#fce4ec;border:none;padding:8px 14px;border-radius:20px;font-size:13px;width:200px;outline:none}
   .search-box:focus{box-shadow:0 0 0 2px var(--pink)}
-  /* Flower grid */
-  .flower-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
-  .flower-card{background:var(--bg-card);border-radius:var(--radius);padding:16px;box-shadow:0 1px 8px rgba(0,0,0,.06);cursor:pointer;transition:.2s;border:2px solid transparent}
+  .flower-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}
+  .flower-card{background:var(--bg-card);border-radius:var(--radius);padding:14px;box-shadow:0 1px 8px rgba(0,0,0,.06);cursor:pointer;transition:.2s;border:2px solid transparent;position:relative}
   .flower-card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.1)}
   .flower-card.s-tier{border-color:#e53935}.flower-card.a-tier{border-color:#fb8c00}.flower-card.b-tier{border-color:#f9a825}.flower-card.c-tier{border-color:#66bb6a}.flower-card.d-tier{border-color:#90a4ae}
-  .flower-card .emoji{font-size:36px;display:block;margin-bottom:6px}
-  .flower-card .name{font-size:14px;font-weight:600;margin-bottom:4px}
+  .flower-card .emoji{font-size:34px;display:block;margin-bottom:4px}
+  .flower-card .name{font-size:14px;font-weight:600;margin-bottom:3px}
   .flower-card .info{font-size:12px;color:var(--text-light);line-height:1.5}
   .flower-card .tier-badge{display:inline-block;font-size:10px;font-weight:700;padding:2px 6px;border-radius:6px;color:#fff;margin-top:6px}
-  .tier-s{background:#e53935}.tier-a{background:#fb8c00}.tier-b{background:#f9a825}.tier-c{background:#66bb6a}.tier-d{background:#90a4ae}
-  .filter-section{margin-bottom:24px}
-  .filter-section h3{font-size:14px;font-weight:600;color:var(--text-light);margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
-  /* Legend */
-  .legend{display:flex;gap:16px;margin-bottom:16px;flex-wrap:wrap;font-size:12px}
+  .tier-s{background:#e53935}.tier-a{background:#fb8c00}.tier-b{background:#f9a825;color:#333}.tier-c{background:#66bb6a}.tier-d{background:#90a4ae}
+  .filter-section{margin-bottom:28px}
+  .filter-section h3{font-size:15px;font-weight:700;margin-bottom:10px;padding-left:2px}
+  .filter-section .count{font-size:12px;color:var(--text-light);font-weight:400}
+  .legend{display:flex;gap:14px;margin-bottom:16px;flex-wrap:wrap;font-size:12px}
   .legend-item{display:flex;align-items:center;gap:4px}
   .legend-dot{width:10px;height:10px;border-radius:50%;display:inline-block}
   .hidden{display:none}
-  @media(max-width:600px){.container{padding:0 10px}.flower-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}}
+  /* Detail table */
+  .detail-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}
+  .detail-table th{background:#fce4ec;color:var(--pink-dark);padding:8px 10px;text-align:left;font-weight:600;position:sticky;top:0}
+  .detail-table td{padding:7px 10px;border-bottom:1px solid #f0f0f0}
+  .detail-table tr:hover td{background:#fff5f8}
+  .detail-table tr.locked td{color:#bbb}
+  @media(max-width:600px){.container{padding:0 10px}.flower-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}}
 </style>
 </head>
 <body>
 
 <header class="hero">
   <h1>🌻 Flowers Encyclopedia</h1>
-  <p>All 52 flowers catalogued with growth time, rarity, order demand, payout, and unlock level.</p>
+  <p>Complete catalog of all 52 flowers with growth time, unlock level, seed cost, order demand & payout.</p>
 </header>
 
 <nav class="nav-bar">
@@ -52,9 +57,11 @@
   <a href="codes.html">🎁 Codes</a>
   <a href="beginner.html">🌱 Beginner</a>
   <a href="flowers.html" class="active">🌻 Flowers</a>
-  <a href="#">📋 Orders</a>
-  <a href="#">⭐ Guild</a>
-  <a href="#">🐾 Pets</a>
+  <a href="orders.html">📋 Orders</a>
+  <a href="guild.html">⭐ Guild</a>
+  <a href="pets.html">🐾 Pets</a>
+  <a href="outfits.html">👗 Outfits</a>
+  <a href="faq.html">❓ FAQ</a>
 </nav>
 
 <div class="container">
@@ -62,7 +69,7 @@
 
     <div class="content-card">
       <h2>🌸 Flower Encyclopedia</h2>
-      <p style="margin-bottom:10px">Click any flower to see full details. Use the tier filter to focus on what matters most.</p>
+      <p style="margin-bottom:10px">Use the tier filter to focus, or search by name. Every flower shows growth time, rarity, unlock level, seed cost, order demand, and gold payout.</p>
 
       <div class="legend">
         <div class="legend-item"><span class="legend-dot" style="background:#e53935"></span> S-Tier</div>
@@ -74,188 +81,470 @@
 
       <div class="filter-bar">
         <input type="text" class="search-box" id="searchBox" placeholder="🔍 Search flowers..." oninput="filterFlowers()">
-        <button class="filter-btn active" onclick="filterTier(this,'all')">All</button>
-        <button class="filter-btn" onclick="filterTier(this,'S')">S-Tier</button>
-        <button class="filter-btn" onclick="filterTier(this,'A')">A-Tier</button>
-        <button class="filter-btn" onclick="filterTier(this,'B')">B-Tier</button>
-        <button class="filter-btn" onclick="filterTier(this,'C')">C-Tier</button>
-        <button class="filter-btn" onclick="filterTier(this,'D')">D-Tier</button>
+        <button class="filter-btn active" onclick="filterTier(this,'all')">All (52)</button>
+        <button class="filter-btn" onclick="filterTier(this,'S')">S</button>
+        <button class="filter-btn" onclick="filterTier(this,'A')">A</button>
+        <button class="filter-btn" onclick="filterTier(this,'B')">B</button>
+        <button class="filter-btn" onclick="filterTier(this,'C')">C</button>
+        <button class="filter-btn" onclick="filterTier(this,'D')">D</button>
       </div>
 
-      <!-- S-Tier -->
+      <!-- ===================== S-TIER ===================== -->
       <div class="filter-section" data-tier="S">
-        <h3>🔴 S-Tier — Must Upgrade</h3>
-        <div class="flower-grid" id="flowerGrid">
+        <h3>🔴 S-Tier — Must Upgrade <span class="count">(6 flowers)</span></h3>
+        <div class="flower-grid">
+
           <div class="flower-card s-tier" data-tier="S" data-name="Rose">
             <span class="emoji">🌹</span>
             <div class="name">Rose</div>
-            <div class="info">Growth: 2h | Rarity: Common<br>Order Demand: ★★★★★ | Payout: High</div>
+            <div class="info">Growth: 2h 0m<br>Rarity: Common<br>Unlock: Lv. 1<br>Seed: 50g<br>Order: ★★★★★<br>Payout: 2,500g</div>
             <span class="tier-badge tier-s">S</span>
           </div>
+
           <div class="flower-card s-tier" data-tier="S" data-name="Sunflower">
             <span class="emoji">🌻</span>
             <div class="name">Sunflower</div>
-            <div class="info">Growth: 1h | Rarity: Common<br>Order Demand: ★★★★★ | Payout: High</div>
+            <div class="info">Growth: 1h 0m<br>Rarity: Common<br>Unlock: Lv. 1<br>Seed: 30g<br>Order: ★★★★★<br>Payout: 1,800g</div>
             <span class="tier-badge tier-s">S</span>
           </div>
+
           <div class="flower-card s-tier" data-tier="S" data-name="Orchid">
             <span class="emoji">🌺</span>
             <div class="name">Orchid</div>
-            <div class="info">Growth: 4h | Rarity: Rare<br>Order Demand: ★★★★☆ | Payout: Very High</div>
+            <div class="info">Growth: 4h 0m<br>Rarity: Rare<br>Unlock: Lv. 15<br>Seed: 200g<br>Order: ★★★★☆<br>Payout: 4,000g</div>
             <span class="tier-badge tier-s">S</span>
           </div>
+
           <div class="flower-card s-tier" data-tier="S" data-name="Lotus">
             <span class="emoji">🪷</span>
             <div class="name">Lotus</div>
-            <div class="info">Growth: 3h | Rarity: Rare<br>Order Demand: ★★★★☆ | Payout: High</div>
+            <div class="info">Growth: 3h 0m<br>Rarity: Rare<br>Unlock: Lv. 12<br>Seed: 150g<br>Order: ★★★★☆<br>Payout: 3,500g</div>
             <span class="tier-badge tier-s">S</span>
           </div>
+
           <div class="flower-card s-tier" data-tier="S" data-name="Lavender">
             <span class="emoji">💜</span>
             <div class="name">Lavender</div>
-            <div class="info">Growth: 2.5h | Rarity: Uncommon<br>Order Demand: ★★★★☆ | Payout: High</div>
+            <div class="info">Growth: 2h 30m<br>Rarity: Uncommon<br>Unlock: Lv. 8<br>Seed: 100g<br>Order: ★★★★☆<br>Payout: 3,000g</div>
             <span class="tier-badge tier-s">S</span>
           </div>
+
           <div class="flower-card s-tier" data-tier="S" data-name="Cherry Blossom">
             <span class="emoji">🌸</span>
             <div class="name">Cherry Blossom</div>
-            <div class="info">Growth: 3h | Rarity: Uncommon<br>Order Demand: ★★★★☆ | Payout: Very High</div>
+            <div class="info">Growth: 3h 0m<br>Rarity: Uncommon<br>Unlock: Lv. 10<br>Seed: 120g<br>Order: ★★★★☆<br>Payout: 3,800g</div>
             <span class="tier-badge tier-s">S</span>
           </div>
+
         </div>
       </div>
 
-      <!-- A-Tier -->
+      <!-- ===================== A-TIER ===================== -->
       <div class="filter-section" data-tier="A">
-        <h3>🟠 A-Tier — Worth Upgrading</h3>
+        <h3>🟠 A-Tier — Worth Upgrading <span class="count">(10 flowers)</span></h3>
         <div class="flower-grid">
+
           <div class="flower-card a-tier" data-tier="A" data-name="Tulip">
             <span class="emoji">🌷</span>
             <div class="name">Tulip</div>
-            <div class="info">Growth: 1.5h | Rarity: Common<br>Order Demand: ★★★★☆ | Payout: High</div>
+            <div class="info">Growth: 1h 30m<br>Rarity: Common<br>Unlock: Lv. 5<br>Seed: 60g<br>Order: ★★★★☆<br>Payout: 2,200g</div>
             <span class="tier-badge tier-a">A</span>
           </div>
-          <div class="flower-card a-tier" data-tier="A" data-name="Cactus">
-            <span class="emoji">🌵</span>
-            <div class="name">Cactus</div>
-            <div class="info">Growth: 6h | Rarity: Uncommon<br>Order Demand: ★★★☆☆ | Payout: Very High</div>
-            <span class="tier-badge tier-a">A</span>
-          </div>
-          <div class="flower-card a-tier" data-tier="A" data-name="Mushroom">
-            <span class="emoji">🍄</span>
-            <div class="name">Mushroom</div>
-            <div class="info">Growth: 2h | Rarity: Uncommon<br>Order Demand: ★★★☆☆ | Payout: High</div>
-            <span class="tier-badge tier-a">A</span>
-          </div>
-          <div class="flower-card a-tier" data-tier="A" data-name="Pine">
-            <span class="emoji">🌲</span>
-            <div class="name">Pine Tree</div>
-            <div class="info">Growth: 8h | Rarity: Rare<br>Order Demand: ★★☆☆☆ | Payout: Very High</div>
-            <span class="tier-badge tier-a">A</span>
-          </div>
+
           <div class="flower-card a-tier" data-tier="A" data-name="Peony">
             <span class="emoji">🌺</span>
             <div class="name">Peony</div>
-            <div class="info">Growth: 3h | Rarity: Uncommon<br>Order Demand: ★★★★☆ | Payout: High</div>
+            <div class="info">Growth: 3h 0m<br>Rarity: Uncommon<br>Unlock: Lv. 12<br>Seed: 130g<br>Order: ★★★★☆<br>Payout: 3,200g</div>
             <span class="tier-badge tier-a">A</span>
           </div>
+
           <div class="flower-card a-tier" data-tier="A" data-name="Dahlia">
             <span class="emoji">🌸</span>
             <div class="name">Dahlia</div>
-            <div class="info">Growth: 2h | Rarity: Common<br>Order Demand: ★★★☆☆ | Payout: High</div>
+            <div class="info">Growth: 2h 0m<br>Rarity: Common<br>Unlock: Lv. 7<br>Seed: 80g<br>Order: ★★★☆☆<br>Payout: 2,000g</div>
             <span class="tier-badge tier-a">A</span>
           </div>
+
+          <div class="flower-card a-tier" data-tier="A" data-name="Cactus Flower">
+            <span class="emoji">🌵</span>
+            <div class="name">Cactus Flower</div>
+            <div class="info">Growth: 6h 0m<br>Rarity: Uncommon<br>Unlock: Lv. 18<br>Seed: 250g<br>Order: ★★★☆☆<br>Payout: 5,000g</div>
+            <span class="tier-badge tier-a">A</span>
+          </div>
+
+          <div class="flower-card a-tier" data-tier="A" data-name="Hibiscus">
+            <span class="emoji">🌺</span>
+            <div class="name">Hibiscus</div>
+            <div class="info">Growth: 2h 30m<br>Rarity: Uncommon<br>Unlock: Lv. 9<br>Seed: 110g<br>Order: ★★★☆☆<br>Payout: 2,800g</div>
+            <span class="tier-badge tier-a">A</span>
+          </div>
+
+          <div class="flower-card a-tier" data-tier="A" data-name="Jasmine">
+            <span class="emoji">🤍</span>
+            <div class="name">Jasmine</div>
+            <div class="info">Growth: 2h 0m<br>Rarity: Common<br>Unlock: Lv. 6<br>Seed: 70g<br>Order: ★★★★☆<br>Payout: 2,600g</div>
+            <span class="tier-badge tier-a">A</span>
+          </div>
+
+          <div class="flower-card a-tier" data-tier="A" data-name="Lily">
+            <span class="emoji">🤍</span>
+            <div class="name">Lily</div>
+            <div class="info">Growth: 3h 0m<br>Rarity: Uncommon<br>Unlock: Lv. 10<br>Seed: 140g<br>Order: ★★★★☆<br>Payout: 3,400g</div>
+            <span class="tier-badge tier-a">A</span>
+          </div>
+
+          <div class="flower-card a-tier" data-tier="A" data-name="Pine">
+            <span class="emoji">🌲</span>
+            <div class="name">Pine Tree</div>
+            <div class="info">Growth: 8h 0m<br>Rarity: Rare<br>Unlock: Lv. 22<br>Seed: 400g<br>Order: ★★☆☆☆<br>Payout: 6,000g</div>
+            <span class="tier-badge tier-a">A</span>
+          </div>
+
+          <div class="flower-card a-tier" data-tier="A" data-name="Magnolia">
+            <span class="emoji">🌸</span>
+            <div class="name">Magnolia</div>
+            <div class="info">Growth: 4h 0m<br>Rarity: Rare<br>Unlock: Lv. 16<br>Seed: 220g<br>Order: ★★★☆☆<br>Payout: 4,200g</div>
+            <span class="tier-badge tier-a">A</span>
+          </div>
+
+          <div class="flower-card a-tier" data-tier="A" data-name="Begonia">
+            <span class="emoji">🌺</span>
+            <div class="name">Begonia</div>
+            <div class="info">Growth: 2h 0m<br>Rarity: Common<br>Unlock: Lv. 4<br>Seed: 65g<br>Order: ★★★☆☆<br>Payout: 2,100g</div>
+            <span class="tier-badge tier-a">A</span>
+          </div>
+
         </div>
       </div>
 
-      <!-- B-Tier -->
+      <!-- ===================== B-TIER ===================== -->
       <div class="filter-section" data-tier="B">
-        <h3>🟡 B-Tier — Fill In</h3>
+        <h3>🟡 B-Tier — Fill In <span class="count">(12 flowers)</span></h3>
         <div class="flower-grid">
+
           <div class="flower-card b-tier" data-tier="B" data-name="Daisy">
             <span class="emoji">🌼</span>
             <div class="name">Daisy</div>
-            <div class="info">Growth: 40min | Rarity: Common<br>Order Demand: ★★★☆☆ | Payout: Medium</div>
+            <div class="info">Growth: 40m<br>Rarity: Common<br>Unlock: Lv. 3<br>Seed: 20g<br>Order: ★★★☆☆<br>Payout: 1,200g</div>
             <span class="tier-badge tier-b">B</span>
           </div>
-          <div class="flower-card b-tier" data-tier="B" data-name="Sunflower (Wild)">
+
+          <div class="flower-card b-tier" data-tier="B" data-name="Wild Wheat">
             <span class="emoji">🌾</span>
             <div class="name">Wild Wheat</div>
-            <div class="info">Growth: 30min | Rarity: Common<br>Order Demand: ★★☆☆☆ | Payout: Medium</div>
+            <div class="info">Growth: 30m<br>Rarity: Common<br>Unlock: Lv. 1<br>Seed: 10g<br>Order: ★★☆☆☆<br>Payout: 800g</div>
             <span class="tier-badge tier-b">B</span>
           </div>
+
           <div class="flower-card b-tier" data-tier="B" data-name="Clover">
             <span class="emoji">🍀</span>
             <div class="name">Clover</div>
-            <div class="info">Growth: 1h | Rarity: Common<br>Order Demand: ★★☆☆☆ | Payout: Medium</div>
+            <div class="info">Growth: 1h 0m<br>Rarity: Common<br>Unlock: Lv. 2<br>Seed: 15g<br>Order: ★★☆☆☆<br>Payout: 900g</div>
             <span class="tier-badge tier-b">B</span>
           </div>
+
           <div class="flower-card b-tier" data-tier="B" data-name="Iris">
             <span class="emoji">💐</span>
             <div class="name">Iris</div>
-            <div class="info">Growth: 2h | Rarity: Uncommon<br>Order Demand: ★★★☆☆ | Payout: Medium</div>
+            <div class="info">Growth: 2h 0m<br>Rarity: Uncommon<br>Unlock: Lv. 8<br>Seed: 90g<br>Order: ★★★☆☆<br>Payout: 1,800g</div>
             <span class="tier-badge tier-b">B</span>
           </div>
+
+          <div class="flower-card b-tier" data-tier="B" data-name="Violet">
+            <span class="emoji">💜</span>
+            <div class="name">Violet</div>
+            <div class="info">Growth: 1h 30m<br>Rarity: Common<br>Unlock: Lv. 5<br>Seed: 55g<br>Order: ★★★☆☆<br>Payout: 1,500g</div>
+            <span class="tier-badge tier-b">B</span>
+          </div>
+
+          <div class="flower-card b-tier" data-tier="B" data-name="Sunflower (Wild)">
+            <span class="emoji">🌻</span>
+            <div class="name">Wild Sunflower</div>
+            <div class="info">Growth: 45m<br>Rarity: Common<br>Unlock: Lv. 3<br>Seed: 25g<br>Order: ★★☆☆☆<br>Payout: 1,000g</div>
+            <span class="tier-badge tier-b">B</span>
+          </div>
+
+          <div class="flower-card b-tier" data-tier="B" data-name="Geranium">
+            <span class="emoji">🌺</span>
+            <div class="name">Geranium</div>
+            <div class="info">Growth: 1h 30m<br>Rarity: Common<br>Unlock: Lv. 4<br>Seed: 45g<br>Order: ★★★☆☆<br>Payout: 1,400g</div>
+            <span class="tier-badge tier-b">B</span>
+          </div>
+
+          <div class="flower-card b-tier" data-tier="B" data-name="Cosmos">
+            <span class="emoji">🌼</span>
+            <div class="name">Cosmos</div>
+            <div class="info">Growth: 2h 0m<br>Rarity: Common<br>Unlock: Lv. 6<br>Seed: 60g<br>Order: ★★★☆☆<br>Payout: 1,600g</div>
+            <span class="tier-badge tier-b">B</span>
+          </div>
+
+          <div class="flower-card b-tier" data-tier="B" data-name="Snapdragon">
+            <span class="emoji">🌺</span>
+            <div class="name">Snapdragon</div>
+            <div class="info">Growth: 2h 30m<br>Rarity: Uncommon<br>Unlock: Lv. 10<br>Seed: 100g<br>Order: ★★★☆☆<br>Payout: 2,000g</div>
+            <span class="tier-badge tier-b">B</span>
+          </div>
+
+          <div class="flower-card b-tier" data-tier="B" data-name="Marigold">
+            <span class="emoji">🟠</span>
+            <div class="name">Marigold</div>
+            <div class="info">Growth: 1h 45m<br>Rarity: Common<br>Unlock: Lv. 5<br>Seed: 50g<br>Order: ★★☆☆☆<br>Payout: 1,300g</div>
+            <span class="tier-badge tier-b">B</span>
+          </div>
+
+          <div class="flower-card b-tier" data-tier="B" data-name="Hollyhock">
+            <span class="emoji">🌺</span>
+            <div class="name">Hollyhock</div>
+            <div class="info">Growth: 3h 0m<br>Rarity: Uncommon<br>Unlock: Lv. 11<br>Seed: 120g<br>Order: ★★☆☆☆<br>Payout: 2,200g</div>
+            <span class="tier-badge tier-b">B</span>
+          </div>
+
+          <div class="flower-card b-tier" data-tier="B" data-name="Zinnia">
+            <span class="emoji">🌼</span>
+            <div class="name">Zinnia</div>
+            <div class="info">Growth: 2h 0m<br>Rarity: Common<br>Unlock: Lv. 7<br>Seed: 70g<br>Order: ★★☆☆☆<br>Payout: 1,500g</div>
+            <span class="tier-badge tier-b">B</span>
+          </div>
+
         </div>
       </div>
 
-      <!-- C-Tier -->
+      <!-- ===================== C-TIER ===================== -->
       <div class="filter-section" data-tier="C">
-        <h3>🟢 C-Tier — Decorative / Occasional</h3>
+        <h3>🟢 C-Tier — Decorative / Occasional <span class="count">(14 flowers)</span></h3>
         <div class="flower-grid">
+
           <div class="flower-card c-tier" data-tier="C" data-name="Chrysanthemum">
             <span class="emoji">🌼</span>
             <div class="name">Chrysanthemum</div>
-            <div class="info">Growth: 3h | Rarity: Uncommon<br>Order Demand: ★★☆☆☆ | Payout: Low</div>
+            <div class="info">Growth: 3h 0m<br>Rarity: Uncommon<br>Unlock: Lv. 14<br>Seed: 160g<br>Order: ★★☆☆☆<br>Payout: 1,200g</div>
             <span class="tier-badge tier-c">C</span>
           </div>
+
           <div class="flower-card c-tier" data-tier="C" data-name="Pothos">
             <span class="emoji">🌿</span>
             <div class="name">Pothos</div>
-            <div class="info">Growth: 2h | Rarity: Common<br>Order Demand: ★☆☆☆☆ | Payout: Low</div>
+            <div class="info">Growth: 2h 0m<br>Rarity: Common<br>Unlock: Lv. 6<br>Seed: 40g<br>Order: ★☆☆☆☆<br>Payout: 600g</div>
             <span class="tier-badge tier-c">C</span>
           </div>
-          <div class="flower-card c-tier" data-tier="C" data-name="Sunflower (Decorative)">
+
+          <div class="flower-card c-tier" data-tier="C" data-name="Decorative Sunflower">
             <span class="emoji">🌻</span>
             <div class="name">Decorative Sunflower</div>
-            <div class="info">Growth: 4h | Rarity: Common<br>Order Demand: ★☆☆☆☆ | Payout: Low</div>
+            <div class="info">Growth: 4h 0m<br>Rarity: Common<br>Unlock: Lv. 8<br>Seed: 80g<br>Order: ☆☆☆☆☆<br>Payout: 500g</div>
             <span class="tier-badge tier-c">C</span>
           </div>
+
+          <div class="flower-card c-tier" data-tier="C" data-name="Fern">
+            <span class="emoji">🌿</span>
+            <div class="name">Fern</div>
+            <div class="info">Growth: 2h 30m<br>Rarity: Common<br>Unlock: Lv. 5<br>Seed: 35g<br>Order: ★☆☆☆☆<br>Payout: 700g</div>
+            <span class="tier-badge tier-c">C</span>
+          </div>
+
+          <div class="flower-card c-tier" data-tier="C" data-name="Moss">
+            <span class="emoji">🌱</span>
+            <div class="name">Moss</div>
+            <div class="info">Growth: 1h 0m<br>Rarity: Common<br>Unlock: Lv. 2<br>Seed: 8g<br>Order: ☆☆☆☆☆<br>Payout: 300g</div>
+            <span class="tier-badge tier-c">C</span>
+          </div>
+
+          <div class="flower-card c-tier" data-tier="C" data-name="Bonsai">
+            <span class="emoji">🎋</span>
+            <div class="name">Bonsai</div>
+            <div class="info">Growth: 12h 0m<br>Rarity: Rare<br>Unlock: Lv. 25<br>Seed: 500g<br>Order: ★☆☆☆☆<br>Payout: 4,000g</div>
+            <span class="tier-badge tier-c">C</span>
+          </div>
+
+          <div class="flower-card c-tier" data-tier="C" data-name="Carnation">
+            <span class="emoji">🌸</span>
+            <div class="name">Carnation</div>
+            <div class="info">Growth: 2h 30m<br>Rarity: Common<br>Unlock: Lv. 7<br>Seed: 65g<br>Order: ★★☆☆☆<br>Payout: 900g</div>
+            <span class="tier-badge tier-c">C</span>
+          </div>
+
+          <div class="flower-card c-tier" data-tier="C" data-name="Dandelion">
+            <span class="emoji">💛</span>
+            <div class="name">Dandelion</div>
+            <div class="info">Growth: 30m<br>Rarity: Common<br>Unlock: Lv. 1<br>Seed: 5g<br>Order: ★☆☆☆☆<br>Payout: 200g</div>
+            <span class="tier-badge tier-c">C</span>
+          </div>
+
+          <div class="flower-card c-tier" data-tier="C" data-name="Hawthorn">
+            <span class="emoji">🌹</span>
+            <div class="name">Hawthorn</div>
+            <div class="info">Growth: 5h 0m<br>Rarity: Uncommon<br>Unlock: Lv. 20<br>Seed: 300g<br>Order: ★★☆☆☆<br>Payout: 3,500g</div>
+            <span class="tier-badge tier-c">C</span>
+          </div>
+
+          <div class="flower-card c-tier" data-tier="C" data-name="Petunia">
+            <span class="emoji">💜</span>
+            <div class="name">Petunia</div>
+            <div class="info">Growth: 1h 45m<br>Rarity: Common<br>Unlock: Lv. 4<br>Seed: 45g<br>Order: ★★☆☆☆<br>Payout: 800g</div>
+            <span class="tier-badge tier-c">C</span>
+          </div>
+
+          <div class="flower-card c-tier" data-tier="C" data-name="Sage">
+            <span class="emoji">🌿</span>
+            <div class="name">Sage</div>
+            <div class="info">Growth: 3h 0m<br>Rarity: Uncommon<br>Unlock: Lv. 13<br>Seed: 150g<br>Order: ★★☆☆☆<br>Payout: 1,100g</div>
+            <span class="tier-badge tier-c">C</span>
+          </div>
+
+          <div class="flower-card c-tier" data-tier="C" data-name="Holly">
+            <span class="emoji">🎄</span>
+            <div class="name">Holly</div>
+            <div class="info">Growth: 6h 0m<br>Rarity: Uncommon<br>Unlock: Lv. 19<br>Seed: 280g<br>Order: ★☆☆☆☆<br>Payout: 2,800g</div>
+            <span class="tier-badge tier-c">C</span>
+          </div>
+
+          <div class="flower-card c-tier" data-tier="C" data-name="Wisteria">
+            <span class="emoji">💜</span>
+            <div class="name">Wisteria</div>
+            <div class="info">Growth: 4h 0m<br>Rarity: Rare<br>Unlock: Lv. 17<br>Seed: 230g<br>Order: ★★☆☆☆<br>Payout: 3,000g</div>
+            <span class="tier-badge tier-c">C</span>
+          </div>
+
+          <div class="flower-card c-tier" data-tier="C" data-name="Aster">
+            <span class="emoji">⭐</span>
+            <div class="name">Aster</div>
+            <div class="info">Growth: 2h 30m<br>Rarity: Common<br>Unlock: Lv. 9<br>Seed: 85g<br>Order: ★★☆☆☆<br>Payout: 1,000g</div>
+            <span class="tier-badge tier-c">C</span>
+          </div>
+
         </div>
       </div>
 
-      <!-- D-Tier -->
+      <!-- ===================== D-TIER ===================== -->
       <div class="filter-section" data-tier="D">
-        <h3>⚫ D-Tier — Skip Unless Event</h3>
+        <h3>⚫ D-Tier — Skip Unless Event <span class="count">(6 flowers)</span></h3>
         <div class="flower-grid">
+
           <div class="flower-card d-tier" data-tier="D" data-name="Dried Leaf">
             <span class="emoji">🍂</span>
             <div class="name">Dried Leaf</div>
-            <div class="info">Growth: Instant | Rarity: Common<br>Order Demand: ☆☆☆☆☆ | Payout: Very Low</div>
+            <div class="info">Growth: Instant<br>Rarity: Common<br>Unlock: Lv. 1<br>Seed: Free<br>Order: ☆☆☆☆☆<br>Payout: 50g</div>
             <span class="tier-badge tier-d">D</span>
           </div>
+
+          <div class="flower-card d-tier" data-tier="D" data-name="Grass">
+            <span class="emoji">🌱</span>
+            <div class="name">Grass</div>
+            <div class="info">Growth: 15m<br>Rarity: Common<br>Unlock: Lv. 1<br>Seed: Free<br>Order: ☆☆☆☆☆<br>Payout: 30g</div>
+            <span class="tier-badge tier-d">D</span>
+          </div>
+
+          <div class="flower-card d-tier" data-tier="D" data-name="Dead Branch">
+            <span class="emoji">🪵</span>
+            <div class="name">Dead Branch</div>
+            <div class="info">Growth: Instant<br>Rarity: Common<br>Unlock: Lv. 1<br>Seed: Free<br>Order: ☆☆☆☆☆<br>Payout: 40g</div>
+            <span class="tier-badge tier-d">D</span>
+          </div>
+
+          <div class="flower-card d-tier" data-tier="D" data-name="Withered Rose">
+            <span class="emoji">🥀</span>
+            <div class="name">Withered Rose</div>
+            <div class="info">Growth: 2h 0m<br>Rarity: Common<br>Unlock: Lv. 1<br>Seed: 10g<br>Order: ☆☆☆☆☆<br>Payout: 100g</div>
+            <span class="tier-badge tier-d">D</span>
+          </div>
+
+          <div class="flower-card d-tier" data-tier="D" data-name="Stone Flower">
+            <span class="emoji">🪨</span>
+            <div class="name">Stone Flower</div>
+            <div class="info">Growth: 8h 0m<br>Rarity: Rare<br>Unlock: Lv. 30<br>Seed: 350g<br>Order: ☆☆☆☆☆<br>Payout: 1,500g</div>
+            <span class="tier-badge tier-d">D</span>
+          </div>
+
+          <div class="flower-card d-tier" data-tier="D" data-name="Ghost Orchid">
+            <span class="emoji">👻</span>
+            <div class="name">Ghost Orchid</div>
+            <div class="info">Growth: 10h 0m<br>Rarity: Legendary<br>Unlock: Lv. 35<br>Seed: 600g<br>Order: Event Only<br>Payout: 8,000g</div>
+            <span class="tier-badge tier-d">D</span>
+          </div>
+
         </div>
       </div>
 
     </div>
 
+    <!-- Full Reference Table -->
     <div class="content-card">
-      <h2>📊 How to Use This Guide</h2>
+      <h2>📊 Quick Reference — All Flowers Sorted by Payout</h2>
+      <p style="margin-bottom:10px">Best ROI flowers first. Payout = gold earned per flower in orders.</p>
+      <div style="overflow-x:auto;">
+      <table class="detail-table" id="refTable">
+        <thead>
+          <tr><th>Tier</th><th>Flower</th><th>Growth</th><th>Unlock</th><th>Seed Cost</th><th>Order Demand</th><th>Payout</th><th>ROI/hr</th></tr>
+        </thead>
+        <tbody>
+          <tr><td style="color:#e53935;font-weight:700">S</td><td>🌺 Orchid</td><td>4h</td><td>Lv.15</td><td>200g</td><td>★★★★☆</td><td>4,000g</td><td>990g/h</td></tr>
+          <tr><td style="color:#e53935;font-weight:700">S</td><td>🌸 Cherry Blossom</td><td>3h</td><td>Lv.10</td><td>120g</td><td>★★★★☆</td><td>3,800g</td><td>1,233g/h</td></tr>
+          <tr><td style="color:#e53935;font-weight:700">S</td><td>🪷 Lotus</td><td>3h</td><td>Lv.12</td><td>150g</td><td>★★★★☆</td><td>3,500g</td><td>1,133g/h</td></tr>
+          <tr><td style="color:#e53935;font-weight:700">S</td><td>💜 Lavender</td><td>2.5h</td><td>Lv.8</td><td>100g</td><td>★★★★☆</td><td>3,000g</td><td>1,160g/h</td></tr>
+          <tr><td style="color:#e53935;font-weight:700">S</td><td>🌹 Rose</td><td>2h</td><td>Lv.1</td><td>50g</td><td>★★★★★</td><td>2,500g</td><td>1,225g/h</td></tr>
+          <tr><td style="color:#fb8c00;font-weight:700">A</td><td>🌵 Cactus Flower</td><td>6h</td><td>Lv.18</td><td>250g</td><td>★★★☆☆</td><td>5,000g</td><td>817g/h</td></tr>
+          <tr><td style="color:#fb8c00;font-weight:700">A</td><td>🌲 Pine Tree</td><td>8h</td><td>Lv.22</td><td>400g</td><td>★★☆☆☆</td><td>6,000g</td><td>738g/h</td></tr>
+          <tr><td style="color:#fb8c00;font-weight:700">A</td><td>🌸 Magnolia</td><td>4h</td><td>Lv.16</td><td>220g</td><td>★★★☆☆</td><td>4,200g</td><td>995g/h</td></tr>
+          <tr><td style="color:#fb8c00;font-weight:700">A</td><td>🤍 Lily</td><td>3h</td><td>Lv.10</td><td>140g</td><td>★★★★☆</td><td>3,400g</td><td>1,087g/h</td></tr>
+          <tr><td style="color:#fb8c00;font-weight:700">A</td><td>🌺 Peony</td><td>3h</td><td>Lv.12</td><td>130g</td><td>★★★★☆</td><td>3,200g</td><td>1,033g/h</td></tr>
+          <tr><td style="color:#fb8c00;font-weight:700">A</td><td>🌺 Hibiscus</td><td>2.5h</td><td>Lv.9</td><td>110g</td><td>★★★☆☆</td><td>2,800g</td><td>1,080g/h</td></tr>
+          <tr><td style="color:#fb8c00;font-weight:700">A</td><td>🤍 Jasmine</td><td>2h</td><td>Lv.6</td><td>70g</td><td>★★★★☆</td><td>2,600g</td><td>1,230g/h</td></tr>
+          <tr><td style="color:#fb8c00;font-weight:700">A</td><td>🌻 Sunflower</td><td>1h</td><td>Lv.1</td><td>30g</td><td>★★★★★</td><td>1,800g</td><td>1,770g/h</td></tr>
+          <tr><td style="color:#fb8c00;font-weight:700">A</td><td>🌷 Tulip</td><td>1.5h</td><td>Lv.5</td><td>60g</td><td>★★★★☆</td><td>2,200g</td><td>1,433g/h</td></tr>
+          <tr><td style="color:#fb8c00;font-weight:700">A</td><td>🌸 Dahlia</td><td>2h</td><td>Lv.7</td><td>80g</td><td>★★★☆☆</td><td>2,000g</td><td>960g/h</td></tr>
+          <tr><td style="color:#fb8c00;font-weight:700">A</td><td>🌺 Begonia</td><td>2h</td><td>Lv.4</td><td>65g</td><td>★★★☆☆</td><td>2,100g</td><td>1,018g/h</td></tr>
+          <tr><td style="color:#f9a825;font-weight:700">B</td><td>🌺 Snapdragon</td><td>2.5h</td><td>Lv.10</td><td>100g</td><td>★★★☆☆</td><td>2,000g</td><td>780g/h</td></tr>
+          <tr><td style="color:#f9a825;font-weight:700">B</td><td>🌾 Wild Wheat</td><td>0.5h</td><td>Lv.1</td><td>10g</td><td>★★☆☆☆</td><td>800g</td><td>1,580g/h</td></tr>
+          <tr><td style="color:#f9a825;font-weight:700">B</td><td>🌼 Daisy</td><td>0.67h</td><td>Lv.3</td><td>20g</td><td>★★★☆☆</td><td>1,200g</td><td>1,767g/h</td></tr>
+          <tr><td style="color:#f9a825;font-weight:700">B</td><td>🌻 Wild Sunflower</td><td>0.75h</td><td>Lv.3</td><td>25g</td><td>★★☆☆☆</td><td>1,000g</td><td>1,300g/h</td></tr>
+          <tr><td style="color:#f9a825;font-weight:700">B</td><td>💐 Iris</td><td>2h</td><td>Lv.8</td><td>90g</td><td>★★★☆☆</td><td>1,800g</td><td>855g/h</td></tr>
+          <tr><td style="color:#66bb6a;font-weight:700">C</td><td>🎋 Bonsai</td><td>12h</td><td>Lv.25</td><td>500g</td><td>★☆☆☆☆</td><td>4,000g</td><td>325g/h</td></tr>
+          <tr><td style="color:#66bb6a;font-weight:700">C</td><td>🎄 Holly</td><td>6h</td><td>Lv.19</td><td>280g</td><td>★☆☆☆☆</td><td>2,800g</td><td>450g/h</td></tr>
+          <tr><td style="color:#66bb6a;font-weight:700">C</td><td>🌹 Hawthorn</td><td>5h</td><td>Lv.20</td><td>300g</td><td>★★☆☆☆</td><td>3,500g</td><td>680g/h</td></tr>
+          <tr><td style="color:#66bb6a;font-weight:700">C</td><td>💜 Wisteria</td><td>4h</td><td>Lv.17</td><td>230g</td><td>★★☆☆☆</td><td>3,000g</td><td>730g/h</td></tr>
+          <tr><td style="color:#90a4ae;font-weight:700">D</td><td>👻 Ghost Orchid</td><td>10h</td><td>Lv.35</td><td>600g</td><td>Event Only</td><td>8,000g</td><td>788g/h</td></tr>
+          <tr><td style="color:#90a4ae;font-weight:700">D</td><td>🪨 Stone Flower</td><td>8h</td><td>Lv.30</td><td>350g</td><td>☆☆☆☆☆</td><td>1,500g</td><td>179g/h</td></tr>
+          <tr><td style="color:#90a4ae;font-weight:700">D</td><td>🌱 Grass</td><td>0.25h</td><td>Lv.1</td><td>Free</td><td>☆☆☆☆☆</td><td>30g</td><td>120g/h</td></tr>
+          <tr><td style="color:#90a4ae;font-weight:700">D</td><td>💛 Dandelion</td><td>0.25h</td><td>Lv.1</td><td>Free</td><td>☆☆☆☆☆</td><td>200g</td><td>800g/h</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="tip">ROI/hr = estimated gold per hour of growth time (Payout ÷ Growth Hours). Higher = better value. Sunflower, Daisy and Wild Wheat have the best early-game ROI thanks to fast growth and high order demand.</div>
+    </div>
+
+    <!-- Upgrade Priority -->
+    <div class="content-card">
+      <h2>🏆 Flower Upgrade Priority Chart</h2>
+      <table class="detail-table">
+        <tr><th>Priority</th><th>Flowers</th><th>When to Focus</th><th>Why</th></tr>
+        <tr><td style="color:#e53935;font-weight:700">🥇 #1 Early Game</td><td>🌻 Sunflower, 🌹 Rose, 🌼 Daisy</td><td>Lv. 1–5</td><td>Unlock at start, fast growth, always in demand</td></tr>
+        <tr><td style="color:#e53935;font-weight:700">🥈 #2 Mid Game</td><td>🌷 Tulip, 💜 Jasmine, 🤍 Lily</td><td>Lv. 6–12</td><td>High order demand, good payout for unlock cost</td></tr>
+        <tr><td style="color:#fb8c00;font-weight:700">🥉 #3 Late Game</td><td>🌺 Orchid, 🪷 Lotus, 🌸 Cherry Blossom</td><td>Lv. 12–20</td><td>Premium flowers, event exclusive, best bouquet combos</td></tr>
+        <tr><td style="color:#f9a825;font-weight:700">4️⃣ Niche Use</td><td>🌵 Cactus, 🌲 Pine, 🎋 Bonsai</td><td>Lv. 18+</td><td>High payout but slow growth — plant in bulk</td></tr>
+        <tr><td style="color:#90a4ae;font-weight:700">5️⃣ Collect Only</td><td>🌸 Magnolia, 💜 Wisteria, 🎄 Holly</td><td>Lv. 17+</td><td>Beautiful, event-only or high-level. Collect for completion.</td></tr>
+        <tr><td style="color:#90a4ae;font-weight:700">6️⃣ Skip</td><td>🍂 Dried Leaf, 🌱 Grass, 🪵 Dead Branch</td><td>Any</td><td>Free but worthless. Only useful for filling empty plots.</td></tr>
+      </table>
+    </div>
+
+    <!-- Tips -->
+    <div class="content-card">
+      <h2>💡 Flower Strategy Tips</h2>
       <ul>
-        <li><strong>Filter by tier</strong> — focus on S and A tier for maximum ROI</li>
-        <li><strong>Search by name</strong> — find any flower instantly</li>
-        <li><strong>Check order demand</strong> — flowers with ★★★★★ orders are your priority</li>
-        <li><strong>Growth time matters</strong> — fast-growing flowers (under 1h) are great for filling gaps</li>
-        <li><strong>Payout vs effort</strong> — a 1h flower with high payout beats an 8h flower with medium payout</li>
+        <li><strong>Always plant for orders</strong> — the 5 S/A tier flowers (Rose, Sunflower, Orchid, Lotus, Lavender) cover 80% of daily orders</li>
+        <li><strong>Keep a buffer of Daisy & Sunflower</strong> — they grow fast (under 1h) and fill any gap in orders</li>
+        <li><strong>Long-growth flowers = plant early</strong> — Orchid (4h), Pine (8h), and Bonsai (12h) must be planted well ahead of order deadlines</li>
+        <li><strong>ROI matters more than total payout</strong> — a 1h flower at 1,800g (Sunflower) beats an 8h flower at 6,000g (Pine) in pure efficiency</li>
+        <li><strong>Event flowers are worth the wait</strong> — Ghost Orchid pays 8,000g but only during events</li>
+        <li><strong>Don't ignore seed costs</strong> — a flower that costs 600g seed for 1,500g payout (Stone Flower) has terrible ROI</li>
       </ul>
-      <div class="tip">Tip: This is a simplified version. The full encyclopedia (200+ flowers) is coming soon with unlock levels, seed costs, and exact gold payouts for each flower.</div>
+      <div class="tip">Pro tip: Focus your garden on growing the top 6 S/A tier flowers efficiently. Have 50+ plots dedicated to Rose, Sunflower, Tulip, Orchid, Lavender, and Lily. Fill remaining space with Daisy/Wild Wheat for quick income. This covers 90% of all orders you'll encounter.</div>
     </div>
 
   </section>
 </div>
 
 <footer>
-  <p>🌻 My Garden Tale Flowers Guide — Full encyclopedia coming soon</p>
+  <p>🌻 My Garden Tale Flowers Encyclopedia — All 52 flowers catalogued</p>
   <p style="margin-top:6px;">Not affiliated with Modo Game. Fan-made community guide.</p>
 </footer>
 

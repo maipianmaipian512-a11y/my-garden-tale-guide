@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Garden Tale FAQ — Frequently Asked Questions & Answers</title>
+<meta name="description" content="My Garden Tale FAQ: answers to the most common player questions about planting, codes, orders, guild, pets, and more.">
+<style>
+  :root { --pink:#e8a0bf;--pink-dark:#c2185b;--green:#66bb6a;--green-dark:#2e7d32;--gold:#f9a825;--bg:#fdf6f0;--bg-card:#fff;--text:#333;--text-light:#777;--radius:14px; }
+  *{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,"Segoe UI","Noto Sans SC",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}a{color:var(--pink-dark);text-decoration:none}a:hover{text-decoration:underline}
+  .hero{background:linear-gradient(135deg,#fce4ec,#f8bbd0,#e8a0bf);padding:48px 20px 36px;text-align:center}.hero h1{font-size:clamp(24px,4vw,42px);color:var(--pink-dark)}.hero p{font-size:15px;color:#6a1b4a;margin:8px auto 0;max-width:440px}
+  .nav-bar{background:var(--pink-dark);display:flex;overflow-x:auto;scrollbar-width:none}.nav-bar::-webkit-scrollbar{display:none}.nav-bar a{color:rgba(255,255,255,.75);padding:12px 16px;font-size:13px;white-space:nowrap;border-bottom:3px solid transparent;transition:.2s}.nav-bar a:hover,.nav-bar a.active{color:#fff;border-bottom-color:var(--gold);text-decoration:none}
+  .container{max-width:860px;margin:0 auto;padding:0 16px}.section{padding:32px 0 16px}.section-title{font-size:20px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:6px}
+  .content-card{background:var(--bg-card);border-radius:var(--radius);padding:22px 20px;margin-bottom:16px;box-shadow:0 1px 10px rgba(0,0,0,.06)}
+  .content-card h2{font-size:17px;margin-bottom:10px;color:var(--pink-dark)}
+  .content-card h3{font-size:15px;margin:14px 0 6px;color:#555}
+  .content-card p,.content-card li{font-size:14px;color:#444}.content-card ul{padding-left:20px}li{margin-bottom:4px}
+  .tip{background:#e8f5e9;border-left:4px solid var(--green);padding:12px 16px;border-radius:0 10px 10px 0;font-size:13px;margin:12px 0}.tip::before{content:"💡 "}
+  .warning{background:#fff3e0;border-left:4px solid #fb8c00;padding:12px 16px;border-radius:0 10px 10px 0;font-size:13px;margin:12px 0}.warning::before{content:"⚠️ "}
+  .danger{background:#fce4ec;border-left:4px solid #e53935;padding:12px 16px;border-radius:0 10px 10px 0;font-size:13px;margin:12px 0}.danger::before{content:"🚫 "}
+  footer{background:#fce4ec;text-align:center;padding:28px 16px;margin-top:36px;font-size:13px;color:var(--pink-dark)}
+  /* FAQ */
+  .faq-list{margin-top:12px}
+  .faq-item{border:1px solid #f0e0e8;border-radius:var(--radius);margin-bottom:10px;overflow:hidden}
+  .faq-q{padding:16px 18px;background:#fce4ec;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:14px;color:var(--pink-dark);transition:.15s;user-select:none}
+  .faq-q:hover{background:#f8d0e0}
+  .faq-q .arrow{transition:transform .2s;font-size:12px}
+  .faq-q.open .arrow{transform:rotate(180deg)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;padding:0 18px;font-size:14px;color:#444;line-height:1.7}
+  .faq-a.open{max-height:600px;padding:14px 18px}
+  .faq-a ul{padding-left:18px;margin-top:6px}
+  .faq-a li{margin-bottom:4px}
+  .faq-a strong{color:var(--pink-dark)}
+  .faq-anchor{display:block;position:relative;top:-80px;visibility:hidden}
+  /* TOC */
+  .toc-card{background:var(--bg-card);border-radius:var(--radius);padding:18px 20px;margin-bottom:20px;box-shadow:0 1px 10px rgba(0,0,0,.06)}
+  .toc-card h3{font-size:15px;color:var(--pink-dark);margin-bottom:8px}
+  .toc-category{margin-bottom:10px}
+  .toc-category .cat-title{font-size:13px;font-weight:700;color:var(--pink-dark);margin-bottom:4px}
+  .toc-category a{display:inline-block;margin:2px 10px 2px 0;font-size:12px;color:#555}
+  .toc-category a:hover{color:var(--pink-dark);text-decoration:underline}
+  @media(max-width:600px){.container{padding:0 10px}.toc-category a{display:block;margin:2px 0}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>❓ FAQ</h1>
+  <p>Answers to the most common My Garden Tale questions — updated weekly.</p>
+</header>
+
+<nav class="nav-bar">
+  <a href="index.html">🏠 Home</a>
+  <a href="codes.html">🎁 Codes</a>
+  <a href="beginner.html">🌱 Beginner</a>
+  <a href="flowers.html">🌻 Flowers</a>
+  <a href="orders.html">📋 Orders</a>
+  <a href="guild.html">⭐ Guild</a>
+  <a href="pets.html">🐾 Pets</a>
+  <a href="outfits.html">👗 Outfits</a>
+  <a href="faq.html" class="active">❓ FAQ</a>
+</nav>
+
+<div class="container">
+
+  <!-- TOC -->
+  <div class="toc-card">
+    <h3>📑 Categories</h3>
+    <div class="toc-category">
+      <div class="cat-title">🌱 Getting Started</div>
+      <a href="#q-start">How to start?</a>
+      <a href="#q-free">Is the game free?</a>
+      <a href="#q-platform">What devices?</a>
+    </div>
+    <div class="toc-category">
+      <div class="cat-title">💰 Resources (Gold & Gems)</div>
+      <a href="#q-gold">How to get more gold?</a>
+      <a href="#q-gems">Best gem spending?</a>
+      <a href="#q-save">How to save gems?</a>
+    </div>
+    <div class="toc-category">
+      <div class="cat-title">🌸 Flowers & Planting</div>
+      <a href="#q-bloom">How do flowers bloom?</a>
+      <a href="#q-unlock">How to unlock flowers?</a>
+      <a href="#q-dead">Why do flowers die?</a>
+    </div>
+    <div class="toc-category">
+      <div class="cat-title">📋 Orders & Events</div>
+      <a href="#q-order-how">How do orders work?</a>
+      <a href="#q-order-fail">What if I miss an order?</a>
+      <a href="#q-event">How to join events?</a>
+    </div>
+    <div class="toc-category">
+      <div class="cat-title">🎁 Codes & Rewards</div>
+      <a href="#q-code-how">How to use codes?</a>
+      <a href="#q-code-expired">Why is my code expired?</a>
+    </div>
+    <div class="toc-category">
+      <div class="cat-title">🐾 Pets & Guild</div>
+      <a href="#q-pet-how">How to get pets?</a>
+      <a href="#q-pet-best">Best pet for income?</a>
+      <a href="#q-guild-how">How to join a guild?</a>
+    </div>
+    <div class="toc-category">
+      <div class="cat-title">⚙️ General</div>
+      <a href="#q-reset">Can I reset my progress?</a>
+      <a href="#q-trade">Can I trade with others?</a>
+    </div>
+  </div>
+
+  <div class="section">
+
+    <div class="content-card">
+      <h2>🌱 Getting Started</h2>
+      <div class="faq-list">
+
+        <div class="faq-item" id="q-start">
+          <div class="faq-q" onclick="toggleFaq(this)">Can I really play My Garden Tale for free? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            <strong>Yes!</strong> The game is completely free to download and play. You can progress steadily without spending real money. The key is to play smart: prioritize land expansion and tool upgrades, and always check orders before planting. Gems can be earned through daily logins, events, and codes — you don't need to buy them.
+          </div>
+        </div>
+
+        <div class="faq-item" id="q-free">
+          <div class="faq-q" onclick="toggleFaq(this)">Is the game really free or are there paywalls? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            <strong>No hard paywalls.</strong> Every feature (planting, orders, guilds, pets) is accessible for free. The game makes money through optional in-app purchases (gems, skins, boosters). You can play indefinitely without spending — it just takes longer at higher levels. Think of purchases as "time savers" not "necessities."
+          </div>
+        </div>
+
+        <div class="faq-item" id="q-platform">
+          <div class="faq-q" onclick="toggleFaq(this)">What devices can I play on? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            My Garden Tale is available on:
+            <ul>
+              <li><strong>iPhone / iPad</strong> — App Store</li>
+              <li><strong>Android phones & tablets</strong> — Google Play</li>
+              <li><strong>PC</strong> — via Android emulators (BlueStacks, LDPlayer)</li>
+            </ul>
+            Your progress can sync across devices if you link your account (Facebook, Google Play, or Apple ID).
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="content-card">
+      <h2>💰 Gold & Gem Strategy</h2>
+      <div class="faq-list">
+
+        <div class="faq-item" id="q-gold">
+          <div class="faq-q" onclick="toggleFaq(this)">What's the best way to earn gold fast? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            <strong>Order fulfillment is #1.</strong> Selling flowers through orders pays 3-5x more than the shop. Beyond that:
+            <ul>
+              <li>Plant fast-growing flowers (daisy 40min, sunflower 1h) to generate constant income</li>
+              <li>Keep expanding your land — more plots = more flowers = more orders</li>
+              <li>Complete daily guild quests (2,000+ gold per week)</li>
+              <li>Use pets with gold bonus (Fox "Ruby", Hamster "Peanut")</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-item" id="q-gems">
+          <div class="faq-q" onclick="toggleFaq(this)">Where should I spend gems? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            Gem priority order:
+            <ol>
+              <li><strong>Limited-time events</strong> — best value, often 2x-3x gem bonuses</li>
+              <li><strong>Land expansion</strong> — if no events are running</li>
+              <li><strong>Building speed-ups</strong> — only when close to max level</li>
+              <li><strong>Season pass</strong> — includes rare outfits + bonus gems</li>
+              <li><strong>Avoid:</strong> Regular gacha and shop purchases</li>
+            </ol>
+            <div class="danger">Never spend gems on regular gacha unless it's a guaranteed reward event. You'll waste 90% of your gems on items you don't need.</div>
+          </div>
+        </div>
+
+        <div class="faq-item" id="q-save">
+          <div class="faq-q" onclick="toggleFaq(this)">How do I save gems without spending them? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            <ul>
+              <li><strong>Daily login</strong> — check daily for gem rewards</li>
+              <li><strong>Order rewards</strong> — some orders give gem payouts</li>
+              <li><strong>Redeem codes</strong> — check our <a href="codes.html">codes page</a> daily</li>
+              <li><strong>Events & challenges</strong> — weekly events give generous gem rewards</li>
+              <li><strong>Guild quests</strong> — complete all 3 daily guild quests</li>
+              <li><strong>Pet exploration</strong> — send pets out regularly</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="content-card">
+      <h2>🌸 Flowers & Planting</h2>
+      <div class="faq-list">
+
+        <div class="faq-item" id="q-bloom">
+          <div class="faq-q" onclick="toggleFaq(this)">How do flowers bloom? What do they need? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            Flowers need two things:
+            <ul>
+              <li><strong>Time</strong> — each flower has a fixed growth time (30min to 12h)</li>
+              <li><strong>Water</strong> — tap the watering can to water each plot. Some flowers need water every 30-60 minutes</li>
+            </ul>
+            Upgrading your <strong>watering can</strong> (LV3 = water 3 grids at once, LV5 = auto-water) saves hours of tapping per day.
+          </div>
+        </div>
+
+        <div class="faq-item" id="q-unlock">
+          <div class="faq-q" onclick="toggleFaq(this)">How do I unlock new flower types? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            Unlock flowers by:
+            <ul>
+              <li><strong>Reaching the required level</strong> — each flower has a minimum level (e.g., Rose = Lv.1, Tulip = Lv.5, Cherry Blossom = Lv.10)</li>
+              <li><strong>Unlocking the Seed Library</strong> — the main unlock point for new flower types</li>
+              <li><strong>Event rewards</strong> — some rare flowers are event-only unlocks</li>
+            </ul>
+            The Seed Library is your <strong>#3 gold spending priority</strong> — new flowers = more orders = more income.
+          </div>
+        </div>
+
+        <div class="faq-item" id="q-dead">
+          <div class="faq-q" onclick="toggleFaq(this)">Why do my flowers keep dying? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            Flowers die from <strong>not being watered</strong>. Each flower type has a watering interval (shown in-game). If you don't water within that time, the flower wilts and must be replanted. Solutions:
+            <ul>
+              <li><strong>Upgrade your watering can</strong> — higher levels auto-water and expand range</li>
+              <li><strong>Set phone reminders</strong> — especially for long-growth flowers</li>
+              <li><strong>Get the Bird "Tweety" pet</strong> — alerts when flowers are ready</li>
+              <li><strong>Don't plant more than you can water</strong> — manage your capacity</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="content-card">
+      <h2>📋 Orders & Events</h2>
+      <div class="faq-list">
+
+        <div class="faq-item" id="q-order-how">
+          <div class="faq-q" onclick="toggleFaq(this)">How do daily orders work? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            Every day you get <strong>5-8 random orders</strong> from the guild board. Each order needs specific flowers:
+            <ul>
+              <li><strong>Check orders first</strong> before planting anything</li>
+              <li><strong>Plant the flowers needed</strong> and wait for them to grow</li>
+              <li><strong>Harvest and deliver</strong> before the deadline for bonus gold/gems</li>
+              <li><strong>Orders refresh daily</strong> — new orders appear each morning</li>
+              <li><strong>S- and A-priority orders</strong> give gem rewards — prioritize these</li>
+            </ul>
+            Check our <a href="orders.html">Orders Guide</a> for full strategy.
+          </div>
+        </div>
+
+        <div class="faq-item" id="q-order-fail">
+          <div class="faq-q" onclick="toggleFaq(this)">What happens if I miss an order deadline? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            Missed orders simply <strong>expire and give no reward</strong>. You don't lose anything (no penalties), but you miss out on the gold/gem payout. Tips to avoid missing:
+            <ul>
+              <li>Check orders first thing in the morning</li>
+              <li>Plant long-growth flowers (orchids, peonies) early in the day</li>
+              <li>Use speed-up items on critical orders</li>
+              <li>Keep a buffer of fast-growing flowers (daisy, sunflower) for last-minute orders</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-item" id="q-event">
+          <div class="faq-q" onclick="toggleFaq(this)">How do special events work? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            Events are limited-time activities that offer <strong>special rewards</strong> (rare outfits, bonus gems, exclusive flowers):
+            <ul>
+              <li><strong>Length:</strong> Usually 3-7 days</li>
+              <li><strong>How to join:</strong> Tap the event banner on the main screen</li>
+              <li><strong>Tasks:</strong> Complete specific goals (e.g., "Plant 50 sunflowers")</li>
+              <li><strong>Rewards:</strong> Progress-based — complete more tasks = better rewards</li>
+              <li><strong>Preparation:</strong> Stock up on seeds and speed-ups before the event starts</li>
+            </ul>
+            <div class="tip">Always prepare before events: save gems for event purchases and keep your land expanded. Events give the best value for your effort!</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="content-card">
+      <h2>🎁 Codes & Rewards</h2>
+      <div class="faq-list">
+
+        <div class="faq-item" id="q-code-how">
+          <div class="faq-q" onclick="toggleFaq(this)">How do I redeem gift codes? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            <ol>
+              <li>Open My Garden Tale</li>
+              <li>Tap the <strong>📬 Mail</strong> icon</li>
+              <li>Tap <strong>"Redeem Code"</strong> at the bottom</li>
+              <li>Enter the code <strong>exactly</strong> (case-sensitive) and confirm</li>
+              <li>Collect rewards from your in-game mailbox</li>
+            </ol>
+            Check our <a href="codes.html">codes page</a> for the latest working codes!
+          </div>
+        </div>
+
+        <div class="faq-item" id="q-code-expired">
+          <div class="faq-q" onclick="toggleFaq(this)">Why is my code expired or not working? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            Gift codes have <strong>expiration dates</strong> set by the developers. Once expired, they can't be redeemed. Reasons include:
+            <ul>
+              <li><strong>Time expired</strong> — codes are typically valid for 1-4 weeks</li>
+              <li><strong>Usage limit</strong> — each code can only be used once per account</li>
+              <li><strong>Regional restrictions</strong> — some codes only work in certain regions</li>
+            </ul>
+            We update our codes page daily and mark expired codes clearly. Bookmark <a href="codes.html">our codes page</a> and check regularly!
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="content-card">
+      <h2>🐾 Pets & Guild</h2>
+      <div class="faq-list">
+
+        <div class="faq-item" id="q-pet-how">
+          <div class="faq-q" onclick="toggleFaq(this)">How do I get pets? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            Pets are obtained through:
+            <ul>
+              <li><strong>Pet Shop</strong> — spend gems to unlock new pets</li>
+              <li><strong>Event rewards</strong> — rare and legendary pets often appear in events</li>
+              <li><strong>Pet exploration</strong> — sending pets out can unlock new species</li>
+              <li><strong>Season pass</strong> — some pets are season pass rewards</li>
+            </ul>
+            Start with common pets (Cat, Dog) for basic bonuses, then save gems for legendary pets (Dragon, Phoenix, Unicorn) later.
+          </div>
+        </div>
+
+        <div class="faq-item" id="q-pet-best">
+          <div class="faq-q" onclick="toggleFaq(this)">Which pet is best for income? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            <strong>Gold-focused pets:</strong>
+            <ul>
+              <li>🦊 <strong>Fox "Ruby"</strong> — +15% gold bonus (best income pet)</li>
+              <li>🐹 <strong>Hamster "Peanut"</strong> — +5% gold per flower (stacks with Fox)</li>
+              <li>🐾 <strong>Dragon "Ember"</strong> — 20% gold bonus (legendary, game-changer)</li>
+            </ul>
+            <strong>Overall best:</strong> Combine Fox + Hamster + Dragon for maximum income. These three stack for a total of ~40%+ gold bonus.
+          </div>
+        </div>
+
+        <div class="faq-item" id="q-guild-how">
+          <div class="faq-q" onclick="toggleFaq(this)">How do I join a guild? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            <ol>
+              <li>Reach <strong>Lv. 5</strong> (takes about 1 day of casual play)</li>
+              <li>Tap the <strong>⭐ Guild</strong> icon on the main screen</li>
+              <li>Choose "Join Guild" and browse available guilds</li>
+              <li>Use the <strong>level filter</strong> to find a guild matching your level</li>
+              <li>Apply and wait for approval (most guilds approve instantly)</li>
+            </ol>
+            Check our <a href="guild.html">Guild Guide</a> for tips on choosing the right guild!
+            <div class="tip"><strong>Pro tip:</strong> Join a guild on Day 1. The passive bonuses compound over time and become essential for late-game progress.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="content-card">
+      <h2>⚙️ General Questions</h2>
+      <div class="faq-list">
+
+        <div class="faq-item" id="q-reset">
+          <div class="faq-q" onclick="toggleFaq(this)">Can I reset my progress and start over? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            <strong>It depends on the game version.</strong> Some versions allow a fresh start through settings, but it usually requires reaching a certain level first. Be aware: resetting means losing <strong>everything</strong> — all your progress, pets, outfits, and guild rank. We recommend not resetting unless absolutely necessary, as the game is designed to be enjoyable at every level.
+          </div>
+        </div>
+
+        <div class="faq-item" id="q-trade">
+          <div class="faq-q" onclick="toggleFaq(this)">Can I trade flowers or items with other players? <span class="arrow">▼</span></div>
+          <div class="faq-a">
+            <strong>Not directly.</strong> My Garden Tale doesn't have a player-to-player trading system. However, you can:
+            <ul>
+              <li><strong>Share codes</strong> with friends to help them get rewards</li>
+              <li><strong>Join the same guild</strong> and coordinate strategies</li>
+              <li><strong>Participate in guild events together</strong> for better rewards</li>
+              <li>Some versions may have a <strong>guild donation</strong> system for contributing items</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>❓ My Garden Tale FAQ — Updated weekly | Have a question? <a href="mailto:guide@mymy-garden-tale.com">Suggest a topic</a></p>
+  <p style="margin-top:6px;">Not affiliated with Modo Game. Fan-made community guide.</p>
+</footer>
+
+<script>
+function toggleFaq(el) {
+  const answer = el.nextElementSibling;
+  const isOpen = el.classList.contains('open');
+  // Close all others
+  document.querySelectorAll('.faq-q.open').forEach(q => {
+    if (q !== el) {
+      q.classList.remove('open');
+      q.nextElementSibling.classList.remove('open');
+    }
+  });
+  el.classList.toggle('open', !isOpen);
+  answer.classList.toggle('open', !isOpen);
+}
+</script>
+
+</body>
+</html>
